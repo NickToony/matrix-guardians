@@ -5,10 +5,11 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 	//get the number of instances (number of children)
 	var instNum = instance_number(objDepth);
 	
-	var x1 = objCamera.x1 - 64; 
-	var y1 = objCamera.y1 - 64; 
-	var x2 = objCamera.x2 + 64; 
-	var y2 = objCamera.y2 + 200; 
+	var camera = objCamera;
+	var x1 = camera.x1 - camera.bx; 
+	var y1 = camera.y1 - camera.by; 
+	var x2 = camera.x2 + camera.bx; 
+	var y2 = camera.y2 + camera.by; 
 		
 	//make ds_depthgrid local and accessable to our instances (all children of depth parent)
 	var depthgrid = ds_depthgrid;

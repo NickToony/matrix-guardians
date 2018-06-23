@@ -4,7 +4,7 @@
 #macro BOTTOM_LEFT 2
 #macro BOTTOM_RIGHT 3
 
-mapWidth = 1;
+mapWidth = 32;
 mapHeight = mapWidth*2;
 tileWidth = 181/2 - 0.5;
 tileHeight = 137/2 - 5;
@@ -17,3 +17,13 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 		SetTile(xx, yy, objBlockTile);
 	}
 }
+
+// Make start patch
+var clearX = 2;
+var clearY = clearX * 2;
+for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
+	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
+		SetTile(xx, yy, objFloorTile);
+	}
+}
+MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);

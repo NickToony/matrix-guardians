@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "3fa9cc81-5328-4e18-b37d-d48ad33c48bd",
+            "Value": {
+                "id": "1227e626-b249-4268-ac9f-ca2140fafe39",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/WorldY\/WorldY.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4186b5ac-d9f1-4995-b7c9-16ed30a0a5c6",
             "Value": {
                 "id": "478972a6-561d-48eb-9278-0f02cd7aaeff",
@@ -283,6 +302,25 @@
                 ],
                 "resourcePath": "views\/56c0d3a1-43df-426f-9a3c-bdd9d77ac365.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5d8e4b5d-0cbb-44dc-85bc-d7a32bc42684",
+            "Value": {
+                "id": "4a482480-62b9-4e4e-b231-caeb3d6c0404",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/WorldX\/WorldX.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -549,6 +587,25 @@
                 ],
                 "resourcePath": "objects\/objDepth\/objDepth.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9c8dc584-8563-4e1f-86a9-39c5dfa1245f",
+            "Value": {
+                "id": "6dca694c-c94a-41e4-9fa3-a8499e57faf6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/MoveCamera\/MoveCamera.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -863,7 +920,10 @@
         "888ff6a0-0f33-44ef-8f20-bd3ef615bc78",
         "9e819105-764b-4615-aa67-a8f88af61af1",
         "c5e6cf54-5bf3-4043-a72c-42fa6ee25b23",
-        "68201c14-c0ea-4ecb-8951-f4daf6d3b012"
+        "68201c14-c0ea-4ecb-8951-f4daf6d3b012",
+        "5d8e4b5d-0cbb-44dc-85bc-d7a32bc42684",
+        "3fa9cc81-5328-4e18-b37d-d48ad33c48bd",
+        "9c8dc584-8563-4e1f-86a9-39c5dfa1245f"
     ],
     "tutorial": ""
 }
