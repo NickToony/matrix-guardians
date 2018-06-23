@@ -1,0 +1,12 @@
+# Made using Asset Forge (1.3)
+
+:models
+Primitives/block_default[(0, 0, 0);(0.0, 0.0, 0.0);(1.0, 1.0, 1.0);block_default_1;customMaterial1]
+
+:materials
+_defaultMat[RGBA(1.000, 1.000, 1.000, 1.000);]
+customMaterial1[RGBA(0.619, 0.619, 0.619, 1.000);hexagon]
+
+:textures
+
+:extra

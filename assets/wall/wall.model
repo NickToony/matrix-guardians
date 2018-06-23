@@ -1,0 +1,18 @@
+# Made using Asset Forge (1.3)
+
+:models
+Primitives/block_default[(-1, 0.1, 0.45);(0.0, 90.0, 0.0);(0.1, 0.8, 1.0);block_default_4;customMaterial1]
+Primitives/block_default[(-1, 0.9, 0.45);(0.0, 90.0, 0.0);(0.1, 0.1, 1.0);block_default_5;_defaultMat]
+Primitives/block_default[(-1, 0.9, 0.45);(0.0, 90.0, 0.0);(0.1, 0.1, 1.0);block_default_6;_defaultMat]
+Primitives/block_default[(-1, 0, 0.45);(0.0, 90.0, 0.0);(0.1, 0.1, 1.0);block_default_7;_defaultMat]
+
+:materials
+lightStone[RGBA(0.812, 0.808, 0.855, 1.000);]
+glass[RGBA(0.298, 0.314, 0.365, 1.000);]
+_defaultMat[RGBA(1.000, 1.000, 1.000, 1.000);]
+customMaterial1[RGBA(0.261, 0.269, 0.388, 1.000);hexagon]
+stone[RGBA(0.667, 0.663, 0.737, 1.000);]
+
+:textures
+
+:extra
