@@ -27,4 +27,14 @@ instance.gridY = argument1;
 			
 ds_grid_set(objMap.grid, argument0, argument1, instance);
 
+// Trigger depth calc
+objDraw.recalc = true;
+
+// Recalc neighbours
+with (instance) RecalcNeighbours();
+with (instance.topLeft) RecalcNeighbours();
+with (instance.topRight) RecalcNeighbours();
+with (instance.bottomLeft) RecalcNeighbours();
+with (instance.bottomRight) RecalcNeighbours();
+
 return instance;

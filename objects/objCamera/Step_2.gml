@@ -1,7 +1,5 @@
 x = round(x + (xTo - x) / 4);
 y = round(y + (yTo - y) / 4);
-x1 = x - view_wview[0]/2;
-y1 = y - view_hview[0]/2;
 zoom = zoom + (zoomTo - zoom) / 2;
 
 var left = keyboard_check(ord("A"));
@@ -38,4 +36,7 @@ if (mouseTileY mod 2 == 0) {
 	mouseTileX = round((mouse_x-objMap.tileWidth/2)/objMap.tileWidth/2);
 }
 	
-	
+x1 = x - (view_wport[0]* zoom)/2;
+y1 = y - (view_hport[0]* zoom)/2;
+x2 = x + (view_wport[0]* zoom)/2;
+y2 = y + (view_hport[0]* zoom)/2;
