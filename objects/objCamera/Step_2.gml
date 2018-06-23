@@ -36,7 +36,11 @@ if (mouseTileY mod 2 == 0) {
 	mouseTileX = round((mouse_x-objMap.tileWidth/2)/objMap.tileWidth/2);
 }
 	
-x1 = x - (view_wport[0]* zoom)/2;
-y1 = y - (view_hport[0]* zoom)/2;
-x2 = x + (view_wport[0]* zoom)/2;
-y2 = y + (view_hport[0]* zoom)/2;
+w = view_wport[0]* zoom;
+h = view_hport[0]* zoom;
+bx = objMap.tileWidth*ba * zoom;
+by = objMap.tileHeight*ba * zoom;
+x1 = x - w/2;
+y1 = y - h/2;
+x2 = x + w/2;
+y2 = y + h/2;

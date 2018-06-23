@@ -134,6 +134,25 @@
             }
         },
         {
+            "Key": "3e278743-0c4f-44de-b725-43689d21e085",
+            "Value": {
+                "id": "060d99d2-7389-42cd-8ff4-6070276fdd23",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/fntBase\/fntBase.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "4186b5ac-d9f1-4995-b7c9-16ed30a0a5c6",
             "Value": {
                 "id": "478972a6-561d-48eb-9278-0f02cd7aaeff",
