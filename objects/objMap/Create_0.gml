@@ -4,7 +4,7 @@
 #macro BOTTOM_LEFT 2
 #macro BOTTOM_RIGHT 3
 
-mapWidth = 32;
+mapWidth = 1;
 mapHeight = mapWidth*2;
 tileWidth = 181/2 - 0.5;
 tileHeight = 137/2 - 5;
