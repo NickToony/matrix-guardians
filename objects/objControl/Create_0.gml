@@ -4,6 +4,8 @@ display_reset(0, true)
 
 layerInstances = layer_get_id("Instances");
 layerDepth = layer_get_id("Depth");
+layerBuildings = layer_get_id("Buildings");
+layerUnits = layer_get_id("Units");
 
 instance_create_layer(0, 0, layerInstances, objCamera);
 instance_create_layer(0, 0, layerInstances, objDraw);

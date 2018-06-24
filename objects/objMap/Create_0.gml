@@ -37,6 +37,9 @@ for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
 	}
 }
 
+// Base units
+CreateUnit(mapWidth/2 - 2, mapHeight/2, objVoidling);
+
 CreateBuilding(mapWidth/2, mapHeight/2, objGateway);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);

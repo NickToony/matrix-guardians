@@ -1,8 +1,8 @@
 {
-    "id": "122f2144-e828-4edf-9885-b7c7b7c82d59",
+    "id": "141f63ae-8ebd-4d41-bbfb-4d585d8ff8e9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objBuilding",
+    "name": "objUnit",
     "eventList": [
         
     ],
