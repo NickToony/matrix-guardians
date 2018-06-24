@@ -9,8 +9,16 @@ mapHeight = mapWidth*2;
 tileWidth = 181/2 - 0.5;
 tileHeight = 137/2 - 5;
 
+// Create tile grid
 grid = ds_grid_create(mapWidth, mapHeight);
 ds_grid_clear(grid, noone);
+
+// Task lists
+digTasks = ds_list_create();
+floorTasks = ds_list_create();
+
+// Create pathfinding grid
+pathfinding = mp_grid_create(0, 0, mapWidth, mapHeight, 1, 1);
 
 for (var xx = 0; xx < mapWidth; xx ++) {
 	for (var yy = 0; yy < mapHeight; yy ++) {
@@ -19,26 +27,17 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 }
 
 // Make start patch
-var clearX = 3;
-var clearY = round(clearX * 2);
-for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
-	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
-		var tile = SetTile(xx, yy, objDirtBlock);
-		SetTileWalls(tile, sprWall);
-	}
-}
-
-// Make start patch
 var clearX = 2;
 var clearY = round(clearX * 2);
 for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
 	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
-		SetTile(xx, yy, objFloorTile);
+		SetTile(xx, yy, objDirtFloor);
 	}
 }
 
 // Base units
-CreateUnit(mapWidth/2 - 2, mapHeight/2, objVoidling);
+repeat (4)
+	CreateUnit(mapWidth/2 - 2, mapHeight/2, objVoidling);
 
 CreateBuilding(mapWidth/2, mapHeight/2, objGateway);
 

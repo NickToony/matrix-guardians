@@ -1,3 +1,1 @@
-SetTile(
-	objCamera.mouseTileX, objCamera.mouseTileY,
-	objFloorTile);
+AddDigTask(objCamera.mouseTileX, objCamera.mouseTileY); 

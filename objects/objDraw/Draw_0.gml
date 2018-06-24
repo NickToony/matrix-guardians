@@ -31,11 +31,7 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 		//&& (x < (x2)) 
 		//&& (y < (y2)) ) {
 			depthgrid[# 0,yy] = id;
-			var d = y;
-			if (depthOverride) {
-				d += objMap.tileHeight;
-			}
-			depthgrid[# 1,yy] = d;
+			depthgrid[# 1,yy] = depth;
 			yy += 1;
 		//}
 	}
