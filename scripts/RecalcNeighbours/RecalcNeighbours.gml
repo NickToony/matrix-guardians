@@ -1,6 +1,8 @@
-topLeft = GetTileDirection(gridX, gridY, TOP_LEFT);
-topRight = GetTileDirection(gridX, gridY, TOP_RIGHT);
-bottomLeft = GetTileDirection(gridX, gridY, BOTTOM_LEFT);
-bottomRight = GetTileDirection(gridX, gridY, BOTTOM_RIGHT);
+if (argument0 == noone) return;
 
-show_debug_message("RECALC NEIGHBOURS");
+argument0.topLeft = GetTileDirection(argument0.gridX, argument0.gridY, TOP_LEFT);
+argument0.topRight = GetTileDirection(argument0.gridX, argument0.gridY, TOP_RIGHT);
+argument0.bottomLeft = GetTileDirection(argument0.gridX, argument0.gridY, BOTTOM_LEFT);
+argument0.bottomRight = GetTileDirection(argument0.gridX, argument0.gridY, BOTTOM_RIGHT);
+
+argument0.row.redraw = true;

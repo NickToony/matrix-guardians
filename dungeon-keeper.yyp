@@ -267,25 +267,6 @@
             }
         },
         {
-            "Key": "4bad2e09-75ea-4bb5-9c42-fe0bfa528435",
-            "Value": {
-                "id": "adb77590-4fa4-4628-b619-79749128c42b",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/object8\/object8.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "56c0d3a1-43df-426f-9a3c-bdd9d77ac365",
             "Value": {
                 "id": "b5d48790-ffcb-4bfc-afbe-0768ca912ee8",
@@ -457,6 +438,25 @@
             }
         },
         {
+            "Key": "814842fc-c0c8-47c7-8cf1-c9863aaa8649",
+            "Value": {
+                "id": "df46a9aa-a173-4265-a534-3f44c37da9da",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objRow\/objRow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "81b552fa-4b37-4da5-9104-8dd4d2140428",
             "Value": {
                 "id": "d762cb26-a35f-45e2-9592-2a4771cdb02b",
@@ -549,6 +549,25 @@
                 ],
                 "resourcePath": "objects\/objMap\/objMap.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "92401754-64ad-4465-9d42-1e8853723a13",
+            "Value": {
+                "id": "9e2b3afd-176e-4a19-a039-837c6482e254",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/DrawSmartRow\/DrawSmartRow.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -923,7 +942,8 @@
         "68201c14-c0ea-4ecb-8951-f4daf6d3b012",
         "5d8e4b5d-0cbb-44dc-85bc-d7a32bc42684",
         "3fa9cc81-5328-4e18-b37d-d48ad33c48bd",
-        "9c8dc584-8563-4e1f-86a9-39c5dfa1245f"
+        "9c8dc584-8563-4e1f-86a9-39c5dfa1245f",
+        "92401754-64ad-4465-9d42-1e8853723a13"
     ],
     "tutorial": ""
 }

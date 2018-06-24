@@ -26,14 +26,14 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 	
 	//add all the instances/children to the grid, and their corresponding y value
 	with(objDepth){
-		if ( (x > (x1)) 
-		&& (y > (y1)) 
-		&& (x < (x2)) 
-		&& (y < (y2)) ) {
+		//if ( (x > (x1)) 
+		//&& (y > (y1)) 
+		//&& (x < (x2)) 
+		//&& (y < (y2)) ) {
 			depthgrid[# 0,yy] = id;
 			depthgrid[# 1,yy] = (y) ;
 			yy += 1;
-		}
+		//}
 	}
 	
 	// Resize to current instances
@@ -42,6 +42,7 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 	
 	//sort the grid in ascending order (lowest Y will be at the top)
 	ds_grid_sort(ds_depthgrid, 1, true);
+	//show_debug_message(instNum);
 	
 	//use repeat to loop through the grid, starting at height = 0, drawing the instance,
 	//and then incrementing yy for the next loop, to draw the next instance in the grid
@@ -49,9 +50,8 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 	repeat(instNum) {
 		var instanceID = ds_depthgrid[# 0, yy];
 		with(instanceID) { 
-			if (object_is_ancestor(object_index, objBaseTile)) {
-				draw_self();
-				DrawWalls(walled);
+			if (object_index == objRow) {
+				DrawSmartRow();
 			} else {
 				draw_self();
 			}

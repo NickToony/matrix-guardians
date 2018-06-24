@@ -1,24 +1,26 @@
-for (var dir = 0; dir < array_length_1d(argument0); dir++) {
-	var wall = argument0[dir];
+var currentTile = argument0;
+
+for (var dir = 0; dir < array_length_1d(currentTile.walled); dir++) {
+	var wall = currentTile.walled[dir];
 	if (wall == noone) continue;
 	
 	var tile;
 
 	switch (dir) {
 		case TOP_LEFT:
-			tile = topLeft;
+			tile = currentTile.topLeft;
 			break;
 		
 		case TOP_RIGHT:
-			tile = topRight;
+			tile = currentTile.topRight;
 			break;
 			
 		case BOTTOM_RIGHT:
-			tile = bottomRight;
+			tile = currentTile.bottomRight;
 			break;
 			
 		case BOTTOM_LEFT:
-			tile = bottomLeft;
+			tile = currentTile.bottomLeft;
 			break;
 	}
 
@@ -54,6 +56,6 @@ for (var dir = 0; dir < array_length_1d(argument0); dir++) {
 		break;
 	}
 
-	draw_sprite(sprite, ind, x + xx, y + yy);
+	draw_sprite(sprite, ind, currentTile.x + objMap.tileWidth + xx, SURFACE_HEIGHT + yy);
 }
 
