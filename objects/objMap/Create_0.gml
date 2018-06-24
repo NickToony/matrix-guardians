@@ -14,16 +14,29 @@ ds_grid_clear(grid, noone);
 
 for (var xx = 0; xx < mapWidth; xx ++) {
 	for (var yy = 0; yy < mapHeight; yy ++) {
-		SetTile(xx, yy, objBlockTile);
+		SetTile(xx, yy, objDirtBlock);
+	}
+}
+
+// Make start patch
+var clearX = 3;
+var clearY = round(clearX * 2);
+for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
+	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
+		var tile = SetTile(xx, yy, objDirtBlock);
+		SetTileWalls(tile, sprWall);
 	}
 }
 
 // Make start patch
 var clearX = 2;
-var clearY = clearX * 2;
+var clearY = round(clearX * 2);
 for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
 	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
 		SetTile(xx, yy, objFloorTile);
 	}
 }
+
+CreateBuilding(mapWidth/2, mapHeight/2, objGateway);
+
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);

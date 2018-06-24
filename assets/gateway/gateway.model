@@ -1,0 +1,19 @@
+# Made using Asset Forge (1.3)
+
+:models
+City/roof_square[(0, 0, 0);(0.0, 0.0, 0.0);(2.6, 0.5, 2.6);roof_square_4;stone+stone]
+City/roof_window[(0, 1.3, 0);(0.0, 90.0, 0.0);(1.6, 1.9, 1.0);roof_window_5;stone+glass]
+City/wall_skyscraperGlass%[(0, 0, 0.3);(0.0, 90.0, 0.0);(1.0, 1.4, 1.0);wall_skyscraperGlass%_6;lightStone+glass]
+City/wall_skyscraperGlass%[(0, 0, -1.3);(0.0, 90.0, 0.0);(1.0, 1.4, 1.0);wall_skyscraperGlass%_7;lightStone+glass]
+City/wall_border[(0.2, 0, 7.45E-09);(0.0, 0.0, 0.0);(1.0, 1.0, 2.0);wall_border_8;lightStone]
+City/wall_border[(0.8, 0, 7.45E-09);(0.0, 0.0, 0.0);(1.0, 1.0, 2.0);wall_border_9;lightStone]
+
+:materials
+_defaultMat[RGBA(0.000, 0.000, 0.000, 1.000);simpleTriangles]
+stone[RGBA(0.421, 0.413, 0.570, 1.000);metalPlate]
+lightStone[RGBA(0.812, 0.808, 0.855, 1.000);]
+glass[RGBA(0.298, 0.314, 0.365, 1.000);]
+
+:textures
+
+:extra
