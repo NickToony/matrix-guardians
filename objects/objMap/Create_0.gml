@@ -1,4 +1,3 @@
-
 #macro TOP_LEFT 0
 #macro TOP_RIGHT 1
 #macro BOTTOM_LEFT 2
@@ -11,6 +10,7 @@ mapWidth = 32;
 mapHeight = mapWidth*2;
 tileWidth = 181/2 - 0.5;
 tileHeight = 137/2 - 5;
+fogOfWar = true;
 
 selecting = false;
 selection = noone;
@@ -44,6 +44,14 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 //		SetTile(xx, yy, objDirtFloor);
 //	}
 //}
+
+while (instance_number(objLavaTile) < mapWidth) {
+	SetTileVein(irandom(mapWidth), irandom(mapHeight), objLavaTile, 4 + irandom(4));	
+}
+
+while (instance_number(objMetalBlock) < mapHeight*2) {
+	SetTileVein(irandom(mapWidth), irandom(mapHeight), objMetalBlock, 6 + irandom(6));	
+}
 
 SetTileRegion(mapWidth/2, mapHeight/2, objDirtFloor, 3, 3);
 

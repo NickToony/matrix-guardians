@@ -14,10 +14,12 @@ if (!surface_exists(surface) || redraw) {
 	for (var i = 0; i < ds_list_size(tiles); i ++) {
 		var tile = ds_list_find_value(tiles, i);
 	   
-		draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
-		if (tile.taskDig) {
-			var col = tile.accessible ? c_teal : c_red;
-			draw_sprite_ext(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT, 1, 1, 0, col, 0.3);
+		if (!objMap.fogOfWar || tile.visible) {
+			draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
+			if (tile.taskDig) {
+				var col = tile.accessible ? c_teal : c_red;
+				draw_sprite_ext(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT, 1, 1, 0, col, 0.3);
+			}
 		}
 	   
 		DrawWalls(tile);

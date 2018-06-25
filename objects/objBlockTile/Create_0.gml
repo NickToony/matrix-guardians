@@ -9,3 +9,4 @@ walled[BOTTOM_LEFT] = sprWall;
 walled[TOP_LEFT] = sprWall;
 walled[TOP_RIGHT] = sprWall;
 diggable = true;
+digTime = room_speed*4;

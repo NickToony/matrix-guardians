@@ -25,7 +25,5 @@ taskProgress = 0;
 gateway = false;
 
 moveSpeed = 8;
-digSpeed = room_speed;
-floorSpeed = room_speed/2;
-wallSpeed = room_speed*2;
+taskTime = 0;
 image_speed = 0;

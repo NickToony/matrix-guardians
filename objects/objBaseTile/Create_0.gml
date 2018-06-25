@@ -11,3 +11,6 @@ wallable = false;
 taskWall = false;
 connected = false;
 connectable = false;
+digTime = room_speed;
+wallTime = room_speed;
+floorTime = room_speed;

@@ -305,6 +305,25 @@
             }
         },
         {
+            "Key": "324ac93f-7687-440b-b0e0-aee8cb680afb",
+            "Value": {
+                "id": "59e8eaa9-154e-48d9-8156-f5813a4e809a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMetalBlock\/objMetalBlock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "330b7bdc-282a-41ae-861c-f9e38b562ade",
             "Value": {
                 "id": "bc9f4351-89c6-4fb9-815f-a193f9c39d2e",
@@ -511,6 +530,25 @@
                 ],
                 "resourcePath": "rooms\/room0\/room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4a0fb33a-aee5-4313-952c-863dc59d7511",
+            "Value": {
+                "id": "e4d772f3-4ce9-4023-8351-c8b9270acce6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprMetal\/sprMetal.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -780,6 +818,25 @@
             }
         },
         {
+            "Key": "809104ba-5d5b-432f-93ed-2bb21ac75170",
+            "Value": {
+                "id": "2766530f-a369-4f8f-aed9-eb1519674a98",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/SetTileVein\/SetTileVein.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "814842fc-c0c8-47c7-8cf1-c9863aaa8649",
             "Value": {
                 "id": "df46a9aa-a173-4265-a534-3f44c37da9da",
@@ -1046,6 +1103,25 @@
             }
         },
         {
+            "Key": "9885d3ce-1b87-46b4-90b9-638d622622df",
+            "Value": {
+                "id": "b41dda4d-25e0-4020-bd27-823dbf3942f1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprLava\/sprLava.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9bc42826-61c9-44c5-9e61-bcd0b7c5984a",
             "Value": {
                 "id": "4e1a6261-e049-48d5-941a-a41b51b82809",
@@ -1290,6 +1366,25 @@
                 ],
                 "resourcePath": "sprites\/sprTile\/sprTile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c3536c80-7987-4b02-b895-f91372ea7f9d",
+            "Value": {
+                "id": "6b83fff8-4642-4bf3-9311-4ea53c270f25",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objLavaTile\/objLavaTile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1697,6 +1792,7 @@
         "e2090338-b221-460f-b7ef-67d5611b0a5f",
         "8b54c642-4db7-48a8-868b-e15c3f17c4a1",
         "3515e79e-7a5b-426c-a54a-d466726d8502",
+        "809104ba-5d5b-432f-93ed-2bb21ac75170",
         "888ff6a0-0f33-44ef-8f20-bd3ef615bc78",
         "1086ebaa-2d2e-4b47-8304-60f981c06b48",
         "c5e6cf54-5bf3-4043-a72c-42fa6ee25b23",

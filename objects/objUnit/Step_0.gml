@@ -68,7 +68,7 @@ if (state == STATE.IDLE) {
 } else if (state == STATE.TASK) {
 	switch (task) {
 		case TASK.DIG:
-			if (taskProgress > digSpeed) {
+			if (taskProgress > taskTime) {
 				var instance = SetTile(taskX, taskY, objDirtFloor);
 				for (var i = 0; i <= 3; i ++) {
 					var xx = GetNeighbourX(taskX, taskY, i);
@@ -81,7 +81,7 @@ if (state == STATE.IDLE) {
 		break;
 		
 		case TASK.FLOOR:
-			if (taskProgress > floorSpeed) {
+			if (taskProgress > taskTime) {
 				SetTile(taskX, taskY, objFloorTile);
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
@@ -89,7 +89,7 @@ if (state == STATE.IDLE) {
 		break;
 		
 		case TASK.WALL:
-			if (taskProgress > wallSpeed) {
+			if (taskProgress > taskTime) {
 				var currentTile = GetTile(taskX, taskY);
 				if (currentTile == noone || !currentTile.wallable || currentTile.taskDig) {
 					

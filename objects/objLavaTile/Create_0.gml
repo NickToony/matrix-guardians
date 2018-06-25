@@ -3,8 +3,3 @@
 
 // Inherit the parent event
 event_inherited();
-
-diggable = true;
-wallable = true;
-digTime = room_speed*2;
-wallTime = room_speed*3;

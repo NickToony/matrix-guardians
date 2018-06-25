@@ -36,6 +36,7 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 			if (path != noone) {
 				task = TASK.DIG;
 				state = STATE.MOVING;
+				taskTime = tile.digTime;
 					
 				// Remove task
 				ds_list_delete(objMap.digTasks, i);
@@ -77,6 +78,7 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 			if (path != noone) {
 				task = TASK.FLOOR;
 				state = STATE.MOVING;
+				taskTime = tile.floorTime;
 					
 				// Remove task
 				ds_list_delete(objMap.floorTasks, i);
@@ -117,6 +119,7 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 			if (path != noone) {
 				task = TASK.WALL;
 				state = STATE.MOVING;
+				taskTime = tile.wallTime;
 					
 				// Remove task
 				ds_list_delete(objMap.wallTasks, i);
