@@ -14,4 +14,4 @@ instance_create_layer(0, 0, layerInstances, objMap);
 show_debug_overlay(true);
 
 // Fix sprites for units
-sprite_set_offset(sprVoidling, sprite_get_xoffset(sprVoidling),sprite_get_yoffset(sprVoidling) + objMap.tileHeight);
+sprite_set_offset(sprVoidling, sprite_get_xoffset(sprVoidling),sprite_get_yoffset(sprVoidling) + objMap.tileHeight*3);

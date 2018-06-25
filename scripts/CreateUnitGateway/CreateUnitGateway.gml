@@ -1,0 +1,1 @@
+ds_stack_push(objGateway.spawnQueue, argument0);

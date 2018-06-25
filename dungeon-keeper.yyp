@@ -761,6 +761,25 @@
             }
         },
         {
+            "Key": "8b54c642-4db7-48a8-868b-e15c3f17c4a1",
+            "Value": {
+                "id": "65b13eef-081c-4f8b-a9a3-8c281ac6ae1e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/CreateUnitGateway\/CreateUnitGateway.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8d8b70e1-a7cd-4e55-a74c-aabc930cbaf6",
             "Value": {
                 "id": "59c9824e-890b-43ae-a68f-fc2cdd6fb487",
@@ -890,6 +909,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/objDepth\/objDepth.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "9bc42826-61c9-44c5-9e61-bcd0b7c5984a",
+            "Value": {
+                "id": "4e1a6261-e049-48d5-941a-a41b51b82809",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objBuildingTile\/objBuildingTile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1471,7 +1509,8 @@
         "26368248-a3e2-465f-b6dd-53adc0e6eabd",
         "cc061d37-cd99-46e4-805b-929cb1637700",
         "d1f2f84b-531c-4700-a2a2-ee41511ecd2e",
-        "70ec2748-465e-4ea1-8751-6140e1a107da"
+        "70ec2748-465e-4ea1-8751-6140e1a107da",
+        "8b54c642-4db7-48a8-868b-e15c3f17c4a1"
     ],
     "tutorial": ""
 }

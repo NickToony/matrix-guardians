@@ -1,5 +1,7 @@
 alarm[0] = 10;
 
+if (gateway) return;
+
 if (state == STATE.IDLE && task == TASK.IDLE) {
 	var currentX = UnworldX(x, y);
 	var currentY = UnworldY(x, y);

@@ -30,8 +30,8 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 // Make start patch
 var clearX = 2;
 var clearY = round(clearX * 2);
-for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
-	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
+for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
+	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {
 		SetTile(xx, yy, objDirtFloor);
 	}
 }
@@ -39,16 +39,17 @@ for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
 // Make start wall patch
 var clearX = 3;
 var clearY = round(clearX * 2);
-for (var xx = mapWidth/2-clearX; xx < mapWidth/2+clearX; xx ++) {
-	for (var yy = mapHeight/2-clearY; yy < mapHeight/2+clearY; yy ++) {
+for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
+	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {
 		AddWallTask(xx, yy);
 	}
 }
 
-// Base units
-repeat (5)
-	CreateUnit(mapWidth/2 - 2, mapHeight/2, objVoidling);
-
+// Base
 CreateBuilding(mapWidth/2, mapHeight/2, objGateway);
+
+// Base units
+repeat (6)
+	CreateUnitGateway(objVoidling);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);

@@ -8,8 +8,10 @@ var instance = instance_create_layer(0, 0, objControl.layerBuildings, obj);
 instance.x = WorldX(xx, yy);
 instance.y = WorldY(xx, yy) - 10;
 instance.depth = instance.y + objMap.tileHeight;
+instance.gridX = xx;
+instance.gridY = yy;
 
-SetTile(xx, yy, noone);
+SetTile(xx, yy, objBuildingTile);
 if (instance.width == 2) {
 	var fx, fy, tx, ty;
 	fx = xx;
@@ -18,19 +20,19 @@ if (instance.width == 2) {
 	// Top left
 	tx = GetNeighbourX(fx, fy, TOP_LEFT);
 	ty = GetNeighbourY(fx, fy, TOP_LEFT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top
 	tx = GetNeighbourX(fx, fy, TOP_RIGHT);
 	ty = GetNeighbourY(fx, fy, TOP_RIGHT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top right
 	tx = GetNeighbourX(fx, fy, BOTTOM_RIGHT);
 	ty = GetNeighbourY(fx, fy, BOTTOM_RIGHT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 } else if (instance.width >= 3) {
 	var fx, fy, tx, ty;
@@ -40,49 +42,49 @@ if (instance.width == 2) {
 	// Top left
 	tx = GetNeighbourX(fx, fy, TOP_LEFT);
 	ty = GetNeighbourY(fx, fy, TOP_LEFT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top left
 	tx = GetNeighbourX(fx, fy, TOP_LEFT);
 	ty = GetNeighbourY(fx, fy, TOP_LEFT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top
 	tx = GetNeighbourX(fx, fy, TOP_RIGHT);
 	ty = GetNeighbourY(fx, fy, TOP_RIGHT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top
 	tx = GetNeighbourX(fx, fy, TOP_RIGHT);
 	ty = GetNeighbourY(fx, fy, TOP_RIGHT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top right
 	tx = GetNeighbourX(fx, fy, BOTTOM_RIGHT);
 	ty = GetNeighbourY(fx, fy, BOTTOM_RIGHT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top right
 	tx = GetNeighbourX(fx, fy, BOTTOM_RIGHT);
 	ty = GetNeighbourY(fx, fy, BOTTOM_RIGHT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top right
 	tx = GetNeighbourX(fx, fy, BOTTOM_LEFT);
 	ty = GetNeighbourY(fx, fy, BOTTOM_LEFT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 	
 	// Top left
 	tx = GetNeighbourX(fx, fy, TOP_LEFT);
 	ty = GetNeighbourY(fx, fy, TOP_LEFT);
-	SetTile(tx, ty, noone);
+	SetTile(tx, ty, objBuildingTile);
 	fx = tx; fy = ty;
 }
 
