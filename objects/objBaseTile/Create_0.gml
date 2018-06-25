@@ -7,3 +7,5 @@ taskDig = false;
 accessible = false;
 floorable = false;
 taskFloor = false;
+wallable = false;
+taskWall = false;

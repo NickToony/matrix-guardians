@@ -1,2 +1,3 @@
 var temp = argument0;
-return floor(argument1 / objMap.tileHeight);
+return round(argument1 / objMap.tileHeight);
+//return argument1 * objMap.tileHeight;

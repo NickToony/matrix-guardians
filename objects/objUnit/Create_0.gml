@@ -10,11 +10,12 @@ enum STATE {
 enum TASK {
 	IDLE,
 	DIG,
-	FLOOR
+	FLOOR,
+	WALL
 }
 
-path = path_add();
-pathIndex = 0;
+path = noone;
+//pathIndex = 0;
 alarm[0] = 60;
 state = STATE.IDLE;
 task = TASK.IDLE;
@@ -22,6 +23,6 @@ taskX = noone;
 taskY = noone;
 taskProgress = 0;
 
-moveSpeed = 4;
+moveSpeed = 8;
 digSpeed = room_speed;
 floorSpeed = room_speed/2;

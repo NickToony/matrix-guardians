@@ -5,11 +5,16 @@ var offset = 0;
 if (yy mod 2 != 0) {
 	offset += objMap.tileWidth;
 }
-var xx = floor(argument0 / (objMap.tileWidth*2));
+var xx = round((argument0 - offset) / (objMap.tileWidth*2) );
 return xx;
 
 //var offset = 0;
 //if (argument1 mod 2 != 0) {
 //	offset = objMap.tileWidth;	
 //}
-//return argument0 * objMap.tileWidth*2 + offset;
+//return 
+
+
+// x = argument0 * objMap.tileWidth*2 + offset;
+// x - offset = argument0 * objMap.tileWidth * 2
+// (x - offset) / (objMap.tileWidth * 2)

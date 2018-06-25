@@ -609,6 +609,25 @@
             }
         },
         {
+            "Key": "70ec2748-465e-4ea1-8751-6140e1a107da",
+            "Value": {
+                "id": "226396f9-fe96-42d8-94d5-47be45935a57",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/APathDestroy\/APathDestroy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "6afd9f74-ec0a-47f3-a942-c96537f2a438",
@@ -1122,6 +1141,44 @@
             }
         },
         {
+            "Key": "cc061d37-cd99-46e4-805b-929cb1637700",
+            "Value": {
+                "id": "f3213821-3025-4c08-9d07-310ecb77c633",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/AddWallTask\/AddWallTask.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d1f2f84b-531c-4700-a2a2-ee41511ecd2e",
+            "Value": {
+                "id": "586a17ee-bb1e-4109-b48e-128cfe6908e9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/APathFind\/APathFind.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d321718c-ed63-4439-a27d-90f8048f5c2e",
             "Value": {
                 "id": "53870e7e-f30d-4a0b-8b4a-a370874b4387",
@@ -1411,7 +1468,10 @@
         "8d8b70e1-a7cd-4e55-a74c-aabc930cbaf6",
         "ac8db200-3279-4d3e-b8e0-67837eed0b04",
         "efeeafe2-bafe-40d1-ac5c-1362a2fd491c",
-        "26368248-a3e2-465f-b6dd-53adc0e6eabd"
+        "26368248-a3e2-465f-b6dd-53adc0e6eabd",
+        "cc061d37-cd99-46e4-805b-929cb1637700",
+        "d1f2f84b-531c-4700-a2a2-ee41511ecd2e",
+        "70ec2748-465e-4ea1-8751-6140e1a107da"
     ],
     "tutorial": ""
 }

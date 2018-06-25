@@ -35,6 +35,8 @@ if (mouseTileY mod 2 == 0) {
 } else {
 	mouseTileX = round((mouse_x-objMap.tileWidth/2)/objMap.tileWidth/2);
 }
+//mouseTileX = UnworldX(mouse_x, mouse_y);
+//mouseTileY = UnworldY(mouse_x, mouse_y);
 	
 w = view_wport[0]* zoom;
 h = view_hport[0]* zoom;

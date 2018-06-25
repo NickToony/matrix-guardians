@@ -5,3 +5,4 @@
 event_inherited();
 
 diggable = true;
+wallable = true;

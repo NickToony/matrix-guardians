@@ -1,17 +1,20 @@
-depth = y + objMap.tileHeight;
+depth = y + objMap.tileHeight/2;
 
 if (state == STATE.IDLE) {
 	 
 }else if (state == STATE.MOVING) {
-	var tx = path_get_point_x(path, pathIndex);
-	var ty = path_get_point_y(path, pathIndex);
+	var node = ds_stack_top(path);
+	var tx = node[0];
+	var ty = node[1];
 	tx = WorldX(tx, ty);
 	ty = WorldY(tx, ty);
 	
 	if (abs(tx - x) <= moveSpeed && abs(ty - y) <= moveSpeed) {
-		pathIndex += 1;
+		ds_stack_pop(path);
 		
-		if (pathIndex > path_get_length(path)) {
+		if (ds_stack_empty(path)) {
+			APathDestroy(path);
+			path = noone;
 			if (task != TASK.IDLE) {
 				state = STATE.TASK;
 				taskProgress = 0;
@@ -28,7 +31,12 @@ if (state == STATE.IDLE) {
 	switch (task) {
 		case TASK.DIG:
 			if (taskProgress > digSpeed) {
-				SetTile(taskX, taskY, objDirtFloor);
+				var instance = SetTile(taskX, taskY, objDirtFloor);
+				for (var i = 0; i <= 3; i ++) {
+					var xx = GetNeighbourX(taskX, taskY, i);
+					var yy = GetNeighbourY(taskX, taskY, i);
+					AddWallTask(xx, yy);	
+				}
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
 			} else { taskProgress ++ }
@@ -37,6 +45,22 @@ if (state == STATE.IDLE) {
 		case TASK.FLOOR:
 			if (taskProgress > floorSpeed) {
 				SetTile(taskX, taskY, objFloorTile);
+				task = TASK.IDLE;
+				state = STATE.IDLE;	
+			} else { taskProgress ++ }
+		break;
+		
+		case TASK.WALL:
+			if (taskProgress > floorSpeed) {
+				var currentTile = GetTile(taskX, taskY);
+				if (currentTile == noone || !currentTile.wallable) {
+					
+				} else {
+					var taskDig = currentTile.taskDig;
+					var tile = SetTile(taskX, taskY, objBlockTile);
+					SetTileWalls(tile, sprWall);
+					tile.taskDig = taskDig;
+				}
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
 			} else { taskProgress ++ }
