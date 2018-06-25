@@ -134,15 +134,23 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 		// Find a open spot
 		var okay = false;
 		var cell = noone;
+		var attempts = 0;
 		while (!okay) {
 			cell = 	GetTile(irandom(objMap.mapWidth), irandom(objMap.mapHeight));
 			if (cell != noone && !cell.solid) {
 				okay = true;
 			}
+			
+			attempts += 1;
+			if (attempts > 10) {
+				break;	
+			}
 		}
-		path = APathFind(currentX, currentY, cell.gridX, cell.gridY, false);
-		if (path != noone) {
-			state = STATE.MOVING;
+		if (okay) {
+			path = APathFind(currentX, currentY, cell.gridX, cell.gridY, false);
+			if (path != noone) {
+				state = STATE.MOVING;
+			}
 		}
 	}
 }
