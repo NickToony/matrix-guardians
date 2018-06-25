@@ -2,7 +2,7 @@
     "id": "d65d0fc7-d12d-47ba-afaf-d39057fa74f4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "objVoidling",
+    "name": "objRoomba",
     "eventList": [
         {
             "id": "3f2d0cf1-a20b-4d9f-bedd-d9d241ba6826",

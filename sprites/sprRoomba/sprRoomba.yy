@@ -2,7 +2,7 @@
     "id": "57965eff-5c77-4a39-837a-b382f83623e2",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprVoidling",
+    "name": "sprRoomba",
     "For3D": false,
     "HTile": false,
     "VTile": false,

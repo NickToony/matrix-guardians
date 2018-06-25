@@ -490,7 +490,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/sprVoidling\/sprVoidling.yy",
+                "resourcePath": "sprites\/sprRoomba\/sprRoomba.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1307,7 +1307,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/objVoidling\/objVoidling.yy",
+                "resourcePath": "objects\/objRoomba\/objRoomba.yy",
                 "resourceType": "GMObject"
             }
         },

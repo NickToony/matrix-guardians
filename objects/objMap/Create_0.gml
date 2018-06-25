@@ -61,6 +61,6 @@ CreateBuilding(mapWidth/2, mapHeight/2, objGateway);
 
 // Base units
 repeat (6)
-	CreateUnitGateway(objVoidling);
+	CreateUnitGateway(objRoomba);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);
