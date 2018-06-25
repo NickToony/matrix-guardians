@@ -91,7 +91,7 @@ if (state == STATE.IDLE) {
 		case TASK.WALL:
 			if (taskProgress > wallSpeed) {
 				var currentTile = GetTile(taskX, taskY);
-				if (currentTile == noone || !currentTile.wallable) {
+				if (currentTile == noone || !currentTile.wallable || currentTile.taskDig) {
 					
 				} else {
 					var taskDig = currentTile.taskDig;

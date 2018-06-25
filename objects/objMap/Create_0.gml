@@ -4,10 +4,19 @@
 #macro BOTTOM_LEFT 2
 #macro BOTTOM_RIGHT 3
 
+#macro SELECTION_RATE 5
+#macro SELECTION_RANGE 16
+
 mapWidth = 32;
 mapHeight = mapWidth*2;
 tileWidth = 181/2 - 0.5;
 tileHeight = 137/2 - 5;
+
+selecting = false;
+selection = noone;
+selectionRefresh = 0;
+mx = 0;
+my = 0;
 
 // Create tile grid
 grid = ds_grid_create(mapWidth, mapHeight);
@@ -39,7 +48,7 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 SetTileRegion(mapWidth/2, mapHeight/2, objDirtFloor, 3, 3);
 
 // Make start wall patch
-var clearX = 3;
+var clearX = 4;
 var clearY = round(clearX * 2);
 for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
 	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {

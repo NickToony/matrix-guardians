@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "2761860b-4df3-48c4-a131-f675e3475360",
+            "Value": {
+                "id": "fa2e05e5-ef47-4c6f-9a12-74b70b22f668",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/CalculateRegion\/CalculateRegion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2784d458-fb35-4e75-9434-51b4bafa27fc",
             "Value": {
                 "id": "3a181c56-63d5-462e-8fe7-1c5b0d0faf59",
@@ -856,6 +875,25 @@
             }
         },
         {
+            "Key": "92c3caa8-a45c-4668-9aec-527ec11e9a4e",
+            "Value": {
+                "id": "448aa5d4-650f-4150-a2c7-4477d9a216e9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/DrawSelection\/DrawSelection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "92f51fc5-0cb8-44a6-a162-a53148763aee",
             "Value": {
                 "id": "4e84eddd-f92e-4288-90ad-c691415613ad",
@@ -1312,6 +1350,25 @@
             }
         },
         {
+            "Key": "dfd431c3-cf0b-4741-9c5c-14e1484ea19c",
+            "Value": {
+                "id": "eec77cbb-a2d3-4adc-b995-b3ece7cd63a3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/RegionToArray\/RegionToArray.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e2090338-b221-460f-b7ef-67d5611b0a5f",
             "Value": {
                 "id": "f933d35b-e76c-479d-9347-25dc9982c44a",
@@ -1530,7 +1587,10 @@
         "d1f2f84b-531c-4700-a2a2-ee41511ecd2e",
         "70ec2748-465e-4ea1-8751-6140e1a107da",
         "8b54c642-4db7-48a8-868b-e15c3f17c4a1",
-        "3515e79e-7a5b-426c-a54a-d466726d8502"
+        "3515e79e-7a5b-426c-a54a-d466726d8502",
+        "92c3caa8-a45c-4668-9aec-527ec11e9a4e",
+        "dfd431c3-cf0b-4741-9c5c-14e1484ea19c",
+        "2761860b-4df3-48c4-a131-f675e3475360"
     ],
     "tutorial": ""
 }

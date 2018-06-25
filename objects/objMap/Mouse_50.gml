@@ -1,1 +1,0 @@
-AddDigTask(objCamera.mouseTileX, objCamera.mouseTileY); 

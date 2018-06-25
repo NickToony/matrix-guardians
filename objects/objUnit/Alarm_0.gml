@@ -96,7 +96,7 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 			var wallTask = ds_list_find_value(objMap.wallTasks, i);
 			var tile = GetTile(wallTask[0], wallTask[1]);
 			// if it's simply not possible
-			if (tile == noone || !tile.wallable) {
+			if (tile == noone || !tile.wallable || tile.taskDig) {
 				if (tile != noone) {
 					tile.wallTask = false;	
 				}

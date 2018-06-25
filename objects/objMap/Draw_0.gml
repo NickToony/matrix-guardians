@@ -1,4 +1,9 @@
-var xx = WorldX(objCamera.mouseTileX, objCamera.mouseTileY);
-var yy = WorldY(objCamera.mouseTileX, objCamera.mouseTileY);
-
-draw_sprite_ext(sprBlock, 0, xx, yy, 1, 1, 0, c_red, 0.4);
+if (selecting) {
+	if (selectionRefresh <= 0) {
+		selection = CalculateRegion(mx, my, objCamera.mouseTileX, objCamera.mouseTileY, SELECTION_RANGE);
+		selectionRefresh = SELECTION_RATE;
+	}
+	selectionRefresh -= 1;
+	
+	DrawSelection(selection);
+}
