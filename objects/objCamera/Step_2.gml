@@ -29,14 +29,19 @@ var pm = matrix_build_projection_ortho(view_wport[0] * zoom, view_hport[0] * zoo
 camera_set_view_mat(camera, vm);
 camera_set_proj_mat(camera, pm);
 
-mouseTileY = ceil((mouse_y + objMap.tileHeight)/objMap.tileHeight);
-if (mouseTileY mod 2 == 0) {
-	mouseTileX = round((mouse_x)/objMap.tileWidth/2);
-} else {
-	mouseTileX = round((mouse_x-objMap.tileWidth/2)/objMap.tileWidth/2);
+//mouseTileY = ceil((mouse_y + objMap.tileHeight)/objMap.tileHeight);
+//if (mouseTileY mod 2 == 0) {
+//	mouseTileX = round((mouse_x)/objMap.tileWidth/2);
+//} else {
+//	mouseTileX = round((mouse_x-objMap.tileWidth/2)/objMap.tileWidth/2);
+//}
+mouseTileX = UnworldX(mouse_x, mouse_y+objMap.tileHeight*2);
+mouseTileY = UnworldY(mouse_x, mouse_y+objMap.tileHeight*2);
+var tile = GetTile(mouseTileX, mouseTileY);
+if (tile != noone && !tile.solid) {
+	mouseTileX = UnworldX(mouse_x, mouse_y+objMap.tileHeight);
+	mouseTileY = UnworldY(mouse_x, mouse_y+objMap.tileHeight);
 }
-//mouseTileX = UnworldX(mouse_x, mouse_y);
-//mouseTileY = UnworldY(mouse_x, mouse_y);
 	
 w = view_wport[0]* zoom;
 h = view_hport[0]* zoom;

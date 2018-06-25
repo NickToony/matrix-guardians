@@ -6,10 +6,11 @@ layerInstances = layer_get_id("Instances");
 layerDepth = layer_get_id("Depth");
 layerBuildings = layer_get_id("Buildings");
 layerUnits = layer_get_id("Units");
+layerControl = layer_get_id("Control");
 
-instance_create_layer(0, 0, layerInstances, objCamera);
+instance_create_layer(0, 0, layerControl, objCamera);
 instance_create_layer(0, 0, layerInstances, objDraw);
-instance_create_layer(0, 0, layerInstances, objMap);
+instance_create_layer(0, 0, layerControl, objMap);
 
 show_debug_overlay(true);
 

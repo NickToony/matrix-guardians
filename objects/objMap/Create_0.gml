@@ -28,13 +28,15 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 }
 
 // Make start patch
-var clearX = 2;
-var clearY = round(clearX * 2);
-for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
-	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {
-		SetTile(xx, yy, objDirtFloor);
-	}
-}
+//var clearX = 2;
+//var clearY = round(clearX * 2);
+//for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
+//	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {
+//		SetTile(xx, yy, objDirtFloor);
+//	}
+//}
+
+SetTileRegion(mapWidth/2, mapHeight/2, objDirtFloor, 3, 3);
 
 // Make start wall patch
 var clearX = 3;
