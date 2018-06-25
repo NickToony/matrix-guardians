@@ -14,7 +14,7 @@ if (!surface_exists(surface) || redraw) {
 	for (var i = 0; i < ds_list_size(tiles); i ++) {
 		var tile = ds_list_find_value(tiles, i);
 	   
-		if (!objMap.fogOfWar || tile.visible) {
+		if (!objMap.fogOfWar || tile.isVisible) {
 			draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
 			if (tile.taskDig) {
 				var col = tile.accessible ? c_teal : c_red;

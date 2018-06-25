@@ -210,6 +210,25 @@
             }
         },
         {
+            "Key": "16837e29-2c78-4761-8349-18f2a101f1c6",
+            "Value": {
+                "id": "8e802c36-b7bc-45bb-8007-f10b19e41180",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/scale_canvas\/scale_canvas.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "26368248-a3e2-465f-b6dd-53adc0e6eabd",
             "Value": {
                 "id": "a79f1cc3-2a6a-4203-bf08-90ae8fe014ce",
@@ -1065,6 +1084,25 @@
             }
         },
         {
+            "Key": "9568b794-3d18-45f4-aca5-60431d94136c",
+            "Value": {
+                "id": "6627e490-cb24-4c9c-a8e7-379d3345df13",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/canvas_fullscreen\/canvas_fullscreen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "970e94f7-ce7c-491a-a507-eaa3b47bd1d6",
             "Value": {
                 "id": "bad796cb-49a1-43ef-8466-25e652744d2b",
@@ -1819,7 +1857,9 @@
         "d1f2f84b-531c-4700-a2a2-ee41511ecd2e",
         "07e6ef6e-74f4-49f6-883e-9d2a7e3380c6",
         "70ec2748-465e-4ea1-8751-6140e1a107da",
-        "9c8dc584-8563-4e1f-86a9-39c5dfa1245f"
+        "9c8dc584-8563-4e1f-86a9-39c5dfa1245f",
+        "16837e29-2c78-4761-8349-18f2a101f1c6",
+        "9568b794-3d18-45f4-aca5-60431d94136c"
     ],
     "tutorial": ""
 }

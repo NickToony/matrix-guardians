@@ -4,7 +4,6 @@ camera = camera_create();
 view_visible[0] = true;
 view_wport[0] = 1280;
 view_hport[0] = 800;
-
 // Matrixes
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0);
 var pm = matrix_build_projection_ortho(view_wport[0], view_hport[0], 1, 1000);
@@ -37,3 +36,11 @@ maxZoom = 3;
 cameraSpeed = 10;
 mouseTileX = 0;
 mouseTileY = 0;
+
+// Scaling
+base_size = browser_width;
+width = browser_width;
+height = browser_height;
+fullscreen = false;
+fullscreenLast = fullscreen;
+canvas_fullscreen(base_size, width, height);

@@ -1,4 +1,5 @@
 var region = argument0;
+var col = argument1;
 
 if (region == noone) {
 	return;
@@ -18,7 +19,7 @@ if (region == noone) {
 			var cx = xxx;
 			var cy = yyy;
 			
-			draw_sprite_ext(sprBlock, 0, WorldX(cx, cy), WorldY(cx, cy), 1, 1, 0, c_red, 0.4);
+			draw_sprite_ext(sprBlock, 0, WorldX(cx, cy), WorldY(cx, cy), 1, 1, 0, col, 0.4);
 			
 			xxx = GetNeighbourX(cx, cy, region[REGION_YDIR]);
 			yyy = GetNeighbourY(cx, cy, region[REGION_YDIR]);

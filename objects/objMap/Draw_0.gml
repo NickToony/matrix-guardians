@@ -5,5 +5,5 @@ if (selecting) {
 	}
 	selectionRefresh -= 1;
 	
-	DrawSelection(selection);
+	DrawSelection(selection, c_green);
 }
