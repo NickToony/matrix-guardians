@@ -61,7 +61,7 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 					tile.floorTask = false;	
 				}
 				ds_list_delete(objMap.floorTasks, i);
-			} else if (tile.accessible) {
+			} else if (tile.accessible && tile.connected) {
 				ds_priority_add(priority, i, point_distance(currentX, currentY, tile.gridX, tile.gridY));
 			}
 		}
@@ -101,7 +101,7 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 					tile.wallTask = false;	
 				}
 				ds_list_delete(objMap.wallTasks, i);
-			} else if (tile.accessible) {
+			} else if (tile.accessible && tile.connected) {
 				ds_priority_add(priority, i, point_distance(currentX, currentY, tile.gridX, tile.gridY));
 			}
 		}

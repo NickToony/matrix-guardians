@@ -8,5 +8,10 @@ argument0.accessible = (argument0.topLeft != noone && !argument0.topLeft.solid)
 	||  (argument0.topRight != noone && !argument0.topRight.solid)
 	||  (argument0.bottomLeft != noone && !argument0.bottomLeft.solid)
 	||  (argument0.bottomRight != noone && !argument0.bottomRight.solid);
+argument0.connected = argument0.connectable
+	|| (argument0.topLeft != noone && argument0.topLeft.connectable)
+	||  (argument0.topRight != noone && argument0.topRight.connectable)
+	||  (argument0.bottomLeft != noone && argument0.bottomLeft.connectable)
+	||  (argument0.bottomRight != noone && argument0.bottomRight.connectable);
 
 argument0.row.redraw = true;

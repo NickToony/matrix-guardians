@@ -9,3 +9,5 @@ floorable = false;
 taskFloor = false;
 wallable = false;
 taskWall = false;
+connected = false;
+connectable = false;
