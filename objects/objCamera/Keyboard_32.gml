@@ -1,0 +1,1 @@
+MoveCamera(objGateway.x, objGateway.y - objGateway.sprite_height/2, false);

@@ -46,23 +46,17 @@ while (instance_number(objLavaTile) < mapWidth) {
 	SetTileVein(irandom(mapWidth), irandom(mapHeight), objLavaTile, 4 + irandom(4));	
 }
 
-while (instance_number(objMetalBlock) < mapHeight*2) {
+while (instance_number(objMetalBlock) < mapHeight*3) {
 	SetTileVein(irandom(mapWidth), irandom(mapHeight), objMetalBlock, 6 + irandom(6));	
 }
 
+SetTileRegion(mapWidth/2, mapHeight/2, objBlockTile, 4, 4);
 SetTileRegion(mapWidth/2, mapHeight/2, objDirtFloor, 3, 3);
 
-// Make start wall patch
-var clearX = 4;
-var clearY = round(clearX * 2);
-for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
-	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {
-		AddWallTask(xx, yy);
-	}
-}
-
 // Base
-CreateBuilding(mapWidth/2, mapHeight/2, objGateway);
+var xx = GetNeighbourX(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);
+var yy = GetNeighbourY(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);
+CreateBuilding(GetNeighbourX(xx, yy, BOTTOM_LEFT), GetNeighbourY(xx, yy, BOTTOM_LEFT), objGateway);
 
 // Base units
 repeat (6)
