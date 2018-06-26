@@ -10,7 +10,9 @@ enum TOOL {
 	NONE,
 	DIG,
 	STORAGE,
-	REMOVE
+	REMOVE,
+	BUILD,
+	CANCEL
 }
 tool = TOOL.NONE;
 
@@ -40,6 +42,7 @@ ds_grid_clear(grid, noone);
 digTasks = ds_list_create();
 floorTasks = ds_list_create();
 wallTasks = ds_list_create();
+buildTasks = ds_list_create();
 
 // Create pathfinding grid
 pathfinding = mp_grid_create(0, 0, mapWidth, mapHeight, 1, 1);

@@ -3,6 +3,8 @@ if (global.mouse_over_ui) { return; }
 switch (tool) {
 	case TOOL.DIG: 
 	case TOOL.STORAGE:
+	case TOOL.BUILD:
+	case TOOL.CANCEL:
 	case TOOL.REMOVE:
 		selecting = true;
 		selectionRefresh = 0;

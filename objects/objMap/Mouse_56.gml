@@ -40,6 +40,28 @@ if (selection != noone && selectionValid) {
 			}
 			PlayUISound(sndFailed);	
 			break;
+			
+		case TOOL.BUILD:
+			for (var i = 0; i < array_length_1d(arr); i ++) {
+				var tile = arr[i];
+				var tileX = tile[0];
+				var tileY = tile[1];
+	
+				AddBuildTask(tileX, tileY);
+			}
+			PlayUISound(sndPlaceRoom);	
+			break;
+			
+		case TOOL.CANCEL: 
+			for (var i = 0; i < array_length_1d(arr); i ++) {
+				var tile = arr[i];
+				var tileX = tile[0];
+				var tileY = tile[1];
+	
+				CancelTasks(tileX, tileY);
+			}
+			PlayUISound(sndFailed);	
+			break;
 	}
 } else {
 	PlayUISound(sndFailed);	

@@ -533,6 +533,25 @@
             }
         },
         {
+            "Key": "35c46fc1-f779-4e5b-b998-bc23b1849f56",
+            "Value": {
+                "id": "2e67399b-509f-41d6-8683-b86512ef6eeb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/CancelTasks\/CancelTasks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "39cf9f06-19f9-475f-b466-b7e8383312cb",
             "Value": {
                 "id": "b2b73617-c948-4db3-b926-db3d8862bc1d",
@@ -1122,6 +1141,25 @@
             }
         },
         {
+            "Key": "7ee5c6c8-1194-46fc-8172-ebf6493f41f7",
+            "Value": {
+                "id": "90569709-e9a6-4d77-b523-d3ee53503886",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonCancel\/objButtonCancel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "809104ba-5d5b-432f-93ed-2bb21ac75170",
             "Value": {
                 "id": "2766530f-a369-4f8f-aed9-eb1519674a98",
@@ -1309,6 +1347,25 @@
                 ],
                 "resourcePath": "objects\/objMap\/objMap.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "91810f4b-f4c7-4d2d-8c8b-23e89ae552be",
+            "Value": {
+                "id": "70ca85a9-cc04-4da9-920d-b34ac6085ba8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprCancel\/sprCancel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1673,6 +1730,25 @@
             }
         },
         {
+            "Key": "a9786845-6a71-420a-8998-09ef646975c4",
+            "Value": {
+                "id": "fa7be2b4-bd51-4758-a70d-81245ed70aef",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprBuild\/sprBuild.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ac8db200-3279-4d3e-b8e0-67837eed0b04",
             "Value": {
                 "id": "2432b290-c2c4-41e6-b119-f39591cbcb7d",
@@ -1879,6 +1955,25 @@
                 ],
                 "resourcePath": "scripts\/DrawWalls\/DrawWalls.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c97d7936-1948-4f83-8ce1-80f21dabab9d",
+            "Value": {
+                "id": "bd6287d0-8a55-451e-95b3-57d927f008f1",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonBuild\/objButtonBuild.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2129,6 +2224,25 @@
             }
         },
         {
+            "Key": "ebc3292e-9fd7-4589-a374-d16601c4a4f2",
+            "Value": {
+                "id": "4da61cb5-51c7-467c-b53c-8f01aa2c27dd",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/AddBuildTask\/AddBuildTask.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "efeeafe2-bafe-40d1-ac5c-1362a2fd491c",
             "Value": {
                 "id": "7aa78886-43b4-48fd-91df-5fccec426aca",
@@ -2321,8 +2435,10 @@
         "17fd9d1d-15ff-4fd3-b757-734a8d68f68c",
         "ac8db200-3279-4d3e-b8e0-67837eed0b04",
         "efeeafe2-bafe-40d1-ac5c-1362a2fd491c",
+        "ebc3292e-9fd7-4589-a374-d16601c4a4f2",
         "26368248-a3e2-465f-b6dd-53adc0e6eabd",
         "cc061d37-cd99-46e4-805b-929cb1637700",
+        "35c46fc1-f779-4e5b-b998-bc23b1849f56",
         "34d5956f-a884-429b-8480-7b7df4a41746",
         "5d8e4b5d-0cbb-44dc-85bc-d7a32bc42684",
         "3fa9cc81-5328-4e18-b37d-d48ad33c48bd",

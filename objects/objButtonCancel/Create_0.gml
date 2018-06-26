@@ -4,6 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-connectable = true;
-buildable = true;
-buildTime = room_speed * 4;
+tool = TOOL.CANCEL;
+text = "CANCEL";
+icon = sprCancel;

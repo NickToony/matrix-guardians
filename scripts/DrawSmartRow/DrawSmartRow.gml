@@ -20,9 +20,9 @@ if (!surface_exists(surface) || redraw) {
 			} else {
 				draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
 			}
-			if (tile.taskDig) {
+			if (tile.taskDig || tile.taskBuild) {
 				var col = tile.accessible ? c_teal : c_red;
-				draw_sprite_ext(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT, 1, 1, 0, col, 0.3);
+				draw_sprite_ext(tile.taskDig ? tile.sprite_index : sprBlock, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT, 1, 1, 0, col, tile.taskDig ? 0.3 : 0.6);
 			}
 		}
 	   

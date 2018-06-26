@@ -11,6 +11,8 @@ if (selecting) {
 	switch (tool) {
 		case TOOL.DIG:
 		case TOOL.STORAGE:
+		case TOOL.BUILD:
+		case TOOL.CANCEL:
 		case TOOL.REMOVE:
 			var xx = WorldX(objCamera.mouseTileX, objCamera.mouseTileY);
 			var yy = WorldY(objCamera.mouseTileX, objCamera.mouseTileY);
