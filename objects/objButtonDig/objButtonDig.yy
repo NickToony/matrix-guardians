@@ -5,29 +5,19 @@
     "name": "objButtonDig",
     "eventList": [
         {
-            "id": "f05fae19-54c4-4d5d-ac54-022242d58b95",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 53,
-            "eventtype": 6,
-            "m_owner": "566b7628-d74f-4135-a046-27c1a540135a"
-        },
-        {
-            "id": "a1e43ad7-caad-4ce3-8cde-7df0976b67b4",
+            "id": "55b3a80c-5698-431c-8b37-f48610f01d73",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
+            "eventtype": 0,
             "m_owner": "566b7628-d74f-4135-a046-27c1a540135a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "22a5c95a-a73f-413e-bc60-48c772de063f",
+    "parentObjectId": "d92f1da1-f08e-4d7f-a04f-c01b6d64eb18",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

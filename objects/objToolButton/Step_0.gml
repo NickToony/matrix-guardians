@@ -1,0 +1,1 @@
+image_blend = objMap.tool == tool ? c_white : c_gray;

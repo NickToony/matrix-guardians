@@ -8,9 +8,15 @@
 
 enum TOOL {
 	NONE,
-	DIG
+	DIG,
+	STORAGE
 }
 tool = TOOL.NONE;
+
+enum ROOM {
+	NONE,
+	STORAGE
+}
 
 mapWidth = 32;
 mapHeight = mapWidth*2;
@@ -21,6 +27,7 @@ fogOfWar = true;
 selecting = false;
 selection = noone;
 selectionRefresh = 0;
+selectionValid = false;
 mx = 0;
 my = 0;
 
@@ -52,6 +59,7 @@ while (instance_number(objMetalBlock) < mapHeight*3) {
 
 SetTileRegion(mapWidth/2, mapHeight/2, objBlockTile, 4, 4);
 SetTileRegion(mapWidth/2, mapHeight/2, objDirtFloor, 3, 3);
+SetTileRegion(mapWidth/2, mapHeight/2, objFloorTile, 2, 2);
 
 // Base
 var xx = GetNeighbourX(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);

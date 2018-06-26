@@ -15,7 +15,8 @@
         "0240d577-fa5c-47a0-8a2b-ca9d451c445b",
         "92f51fc5-0cb8-44a6-a162-a53148763aee",
         "2784d458-fb35-4e75-9434-51b4bafa27fc",
-        "9e364ceb-8e20-45de-a6aa-73ac3a24e47c"
+        "9e364ceb-8e20-45de-a6aa-73ac3a24e47c",
+        "17fd9d1d-15ff-4fd3-b757-734a8d68f68c"
     ],
     "filterType": "GMScript",
     "folderName": "Tiles",

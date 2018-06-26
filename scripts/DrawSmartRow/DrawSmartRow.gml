@@ -15,7 +15,11 @@ if (!surface_exists(surface) || redraw) {
 		var tile = ds_list_find_value(tiles, i);
 	   
 		if (!objMap.fogOfWar || tile.isVisible) {
-			draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
+			if (tile.roomType != ROOM.NONE && tile.roomSprite != noone) {
+				draw_sprite(tile.roomSprite, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
+			} else {
+				draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
+			}
 			if (tile.taskDig) {
 				var col = tile.accessible ? c_teal : c_red;
 				draw_sprite_ext(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT, 1, 1, 0, col, 0.3);

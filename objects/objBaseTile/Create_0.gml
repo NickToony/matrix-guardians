@@ -15,3 +15,5 @@ digTime = room_speed;
 wallTime = room_speed;
 floorTime = room_speed;
 metals = 0;
+roomType = ROOM.NONE;
+roomSprite = noone;

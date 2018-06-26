@@ -1,1 +1,0 @@
-image_blend = objMap.tool == TOOL.DIG ? c_ltgray : c_white;
