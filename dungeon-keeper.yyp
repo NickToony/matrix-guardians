@@ -229,6 +229,25 @@
             }
         },
         {
+            "Key": "22a5c95a-a73f-413e-bc60-48c772de063f",
+            "Value": {
+                "id": "5a451f2e-e0eb-4cf9-a0d2-958d71e84aff",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objUI\/objUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "26368248-a3e2-465f-b6dd-53adc0e6eabd",
             "Value": {
                 "id": "a79f1cc3-2a6a-4203-bf08-90ae8fe014ce",
@@ -590,6 +609,25 @@
             }
         },
         {
+            "Key": "566b7628-d74f-4135-a046-27c1a540135a",
+            "Value": {
+                "id": "ae5878e6-0322-45d2-b752-df45462d5633",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonDig\/objButtonDig.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "56c0d3a1-43df-426f-9a3c-bdd9d77ac365",
             "Value": {
                 "id": "b5d48790-ffcb-4bfc-afbe-0768ca912ee8",
@@ -701,6 +739,25 @@
                 ],
                 "resourcePath": "objects\/objDirtBlock\/objDirtBlock.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "648ea0c5-f509-4e60-9cbe-4cf7cd5e2ef2",
+            "Value": {
+                "id": "c054b13e-dbb9-4a46-9a69-f7c40ca75b2a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/648ea0c5-f509-4e60-9cbe-4cf7cd5e2ef2.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -948,6 +1005,25 @@
                 ],
                 "resourcePath": "scripts\/SetTile\/SetTile.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8ae7134f-f0aa-486b-bbe9-d72d063ccdf6",
+            "Value": {
+                "id": "ee1bbbf2-504c-4442-ac7e-2365c5385b23",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprButton\/sprButton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1746,6 +1822,25 @@
                 ],
                 "resourcePath": "sprites\/sprGateway\/sprGateway.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f558f65c-cc8c-4106-a216-a106b90935f5",
+            "Value": {
+                "id": "576f27a8-0f93-4fed-9d93-3630b0c65bc7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/f558f65c-cc8c-4106-a216-a106b90935f5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

@@ -1,6 +1,11 @@
-//AddDigTask(objCamera.mouseTileX, objCamera.mouseTileY); 
+if (global.mouse_over_ui) { return; }
 
-selecting = true;
-selectionRefresh = 0;
-mx = objCamera.mouseTileX;
-my = objCamera.mouseTileY;
+switch (tool) {
+	case TOOL.DIG: 
+		selecting = true;
+		selectionRefresh = 0;
+		mx = objCamera.mouseTileX;
+		my = objCamera.mouseTileY;
+		break;
+
+}

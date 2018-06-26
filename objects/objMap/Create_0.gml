@@ -6,6 +6,12 @@
 #macro SELECTION_RATE 5
 #macro SELECTION_RANGE 16
 
+enum TOOL {
+	NONE,
+	DIG
+}
+tool = TOOL.NONE;
+
 mapWidth = 32;
 mapHeight = mapWidth*2;
 tileWidth = 181/2 - 0.5;
@@ -35,15 +41,6 @@ for (var xx = 0; xx < mapWidth; xx ++) {
 		SetTile(xx, yy, objDirtBlock);
 	}
 }
-
-// Make start patch
-//var clearX = 2;
-//var clearY = round(clearX * 2);
-//for (var xx = mapWidth/2-clearX; xx <= mapWidth/2+clearX; xx ++) {
-//	for (var yy = mapHeight/2-(clearY+1); yy <= mapHeight/2+clearY; yy ++) {
-//		SetTile(xx, yy, objDirtFloor);
-//	}
-//}
 
 while (instance_number(objLavaTile) < mapWidth) {
 	SetTileVein(irandom(mapWidth), irandom(mapHeight), objLavaTile, 4 + irandom(4));	

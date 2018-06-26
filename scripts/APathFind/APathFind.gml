@@ -69,8 +69,6 @@ while (!ds_priority_empty(openSet)) {
 		ds_map_destroy(gScore);
 		ds_map_destroy(fScore);
 		
-		show_debug_message("Path length: " + string(ds_stack_size(path)));
-		
 		return path;
 	}
 	
