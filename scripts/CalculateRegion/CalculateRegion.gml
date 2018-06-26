@@ -63,11 +63,11 @@ while (!done) {
 		}
 	}
 	
+	searchedX += 1;
 	if (done) {
 		break;
 	}
 	
-	searchedX += 1;
 	if (searchedX > range) {
 		break;
 	}
