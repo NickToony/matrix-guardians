@@ -26,14 +26,15 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 	
 	//add all the instances/children to the grid, and their corresponding y value
 	with(objDepth){
-		//if ( (x > (x1)) 
-		//&& (y > (y1)) 
-		//&& (x < (x2)) 
-		//&& (y < (y2)) ) {
+		if ( object_index == objRow) ||
+		((x > (x1)) 
+		&& (y > (y1)) 
+		&& (x < (x2)) 
+		&& (y < (y2)) ) {
 			depthgrid[# 0,yy] = id;
 			depthgrid[# 1,yy] = depth;
 			yy += 1;
-		//}
+		}
 	}
 	
 	// Resize to current instances

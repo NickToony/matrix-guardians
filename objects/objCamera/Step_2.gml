@@ -35,13 +35,13 @@ camera_set_proj_mat(camera, pm);
 //} else {
 //	mouseTileX = round((mouse_x-objMap.tileWidth/2)/objMap.tileWidth/2);
 //}
-mouseTileX = UnworldX(mouse_x, mouse_y+objMap.tileHeight*2);
-mouseTileY = UnworldY(mouse_x, mouse_y+objMap.tileHeight*2);
-var tile = GetTile(mouseTileX, mouseTileY);
-if (tile != noone && !tile.solid) {
-	mouseTileX = UnworldX(mouse_x, mouse_y+objMap.tileHeight);
-	mouseTileY = UnworldY(mouse_x, mouse_y+objMap.tileHeight);
-}
+mouseTileX = UnworldX(mouse_x, mouse_y+objMap.tileHeight);
+mouseTileY = UnworldY(mouse_x, mouse_y+objMap.tileHeight);
+//var tile = GetTile(mouseTileX, mouseTileY);
+//if (tile != noone && !tile.solid) {
+//	mouseTileX = UnworldX(mouse_x, mouse_y+objMap.tileHeight);
+//	mouseTileY = UnworldY(mouse_x, mouse_y+objMap.tileHeight);
+//}
 	
 w = view_wport[0]* zoom;
 h = view_hport[0]* zoom;
