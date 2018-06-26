@@ -6,7 +6,13 @@ if (ds_list_empty(tiles))
 
 if (!surface_exists(surface) || redraw) { 
 	if (!surface_exists(surface)) {
-		surface = surface_create((objMap.tileWidth+1) * objMap.mapWidth * 2, SURFACE_HEIGHT); 
+		var width = (objMap.tileWidth+1) * objMap.mapWidth * 2;
+		var xx = 512;
+		while (xx < width) {
+			xx *= 2;	
+		}
+		width = xx;
+		surface = surface_create(width, SURFACE_HEIGHT); 
 	}
 	surface_set_target(surface); 
 	draw_clear_alpha( c_black, 0);

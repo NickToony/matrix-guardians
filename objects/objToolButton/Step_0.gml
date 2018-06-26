@@ -1,1 +1,2 @@
-image_blend = objMap.tool == tool ? c_white : c_gray;
+active = objMap.tool == tool;
+image_blend = active ? c_white : c_gray

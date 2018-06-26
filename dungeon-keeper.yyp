@@ -780,6 +780,25 @@
             }
         },
         {
+            "Key": "5033f32a-6390-4713-93cb-38da1e3c1ae6",
+            "Value": {
+                "id": "56e074dc-b0cd-4b7d-bbe7-8f90ee312ea5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMultiButton\/objMultiButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50587c44-d888-4e52-a997-8e70607fc53a",
             "Value": {
                 "id": "c5c0937e-aeda-4544-9601-a89ee44e1796",
@@ -1958,6 +1977,25 @@
             }
         },
         {
+            "Key": "c914d1d2-bdb9-47e2-9e36-345158bb07ea",
+            "Value": {
+                "id": "c032e1f2-7fc5-4c6a-a3e5-c926133b2026",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMultiButtonRooms\/objMultiButtonRooms.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c97d7936-1948-4f83-8ce1-80f21dabab9d",
             "Value": {
                 "id": "bd6287d0-8a55-451e-95b3-57d927f008f1",
@@ -1993,6 +2031,25 @@
                 ],
                 "resourcePath": "scripts\/AddWallTask\/AddWallTask.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cc14b5ba-aa29-4545-9597-ebcd7f2af9c7",
+            "Value": {
+                "id": "fe2ccb7d-c2d4-4ee3-a2a2-6509ac2d9817",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMultiButtonOrders\/objMultiButtonOrders.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2069,6 +2126,25 @@
                 ],
                 "resourcePath": "objects\/objToolButton\/objToolButton.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dbe6b051-20be-4715-842d-6f5232d0af7c",
+            "Value": {
+                "id": "e2ca553a-239a-4af4-9510-f5e2f1518591",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprRoom\/sprRoom.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

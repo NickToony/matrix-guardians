@@ -7,6 +7,7 @@ layerDepth = layer_get_id("Depth");
 layerBuildings = layer_get_id("Buildings");
 layerUnits = layer_get_id("Units");
 layerControl = layer_get_id("Control");
+layerUI = layer_get_id("UI");
 
 instance_create_layer(0, 0, layerControl, objCamera);
 instance_create_layer(0, 0, layerInstances, objDraw);
