@@ -343,6 +343,25 @@
             }
         },
         {
+            "Key": "30f49731-25fe-46f0-9315-f8f2e7d7d738",
+            "Value": {
+                "id": "8f16a6b3-c437-4a09-b3ca-714a1f642cea",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/CreateMetals\/CreateMetals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "324ac93f-7687-440b-b0e0-aee8cb680afb",
             "Value": {
                 "id": "59e8eaa9-154e-48d9-8156-f5813a4e809a",
@@ -853,6 +872,25 @@
                 ],
                 "resourcePath": "scripts\/APathDestroy\/APathDestroy.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7396d060-763d-4b21-a21a-ea0d95bdf8e1",
+            "Value": {
+                "id": "13179580-6cad-4170-8c3c-9092767c38c0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprMetals\/sprMetals.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1918,6 +1956,25 @@
                 "resourcePath": "views\/fd645eda-fc17-445e-910d-103d1ba277e9.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "ff7dbcc9-7671-4edc-9a85-b5d9a6b6ca16",
+            "Value": {
+                "id": "34f31fa6-fd5d-4d76-a25d-efae27240b69",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMetals\/objMetals.yy",
+                "resourceType": "GMObject"
+            }
         }
     ],
     "script_order": [
@@ -1954,7 +2011,8 @@
         "70ec2748-465e-4ea1-8751-6140e1a107da",
         "9c8dc584-8563-4e1f-86a9-39c5dfa1245f",
         "16837e29-2c78-4761-8349-18f2a101f1c6",
-        "9568b794-3d18-45f4-aca5-60431d94136c"
+        "9568b794-3d18-45f4-aca5-60431d94136c",
+        "30f49731-25fe-46f0-9315-f8f2e7d7d738"
     ],
     "tutorial": ""
 }

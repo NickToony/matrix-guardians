@@ -1,0 +1,15 @@
+# Made using Asset Forge (1.3)
+
+:models
+Swords/guard[(0, 0, 2.24E-08);(0.0, 180.0, 0.0);(0.4, 0.8, 0.4);guard_1;hilt]
+City/roof_square[(0, 0, 0);(0.0, 0.0, 0.0);(0.4, 0.3, 0.4);roof_square_2;lightStone+lightStone]
+
+:materials
+_defaultMat[RGBA(1.000, 1.000, 1.000, 1.000);]
+hilt[RGBA(1.000, 0.980, 0.980, 1.000);metalGalvan]
+stone[RGBA(0.667, 0.663, 0.737, 1.000);]
+lightStone[RGBA(0.963, 0.963, 0.963, 1.000);hexagon]
+
+:textures
+
+:extra

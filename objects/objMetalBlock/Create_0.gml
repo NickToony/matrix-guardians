@@ -6,3 +6,4 @@ event_inherited();
 
 diggable = true;
 digTime = room_speed*3;
+metals = irandom(200) + 100;

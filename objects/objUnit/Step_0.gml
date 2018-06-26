@@ -69,6 +69,11 @@ if (state == STATE.IDLE) {
 	switch (task) {
 		case TASK.DIG:
 			if (taskProgress > taskTime) {
+				var oldTile = GetTile(taskX, taskY);
+				if (oldTile != noone && oldTile.metals > 0) {
+					CreateMetals(taskX, taskY, oldTile.metals);
+				}
+				
 				var instance = SetTile(taskX, taskY, objDirtFloor);
 				for (var i = 0; i <= 3; i ++) {
 					var xx = GetNeighbourX(taskX, taskY, i);
