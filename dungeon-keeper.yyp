@@ -248,6 +248,25 @@
             }
         },
         {
+            "Key": "1c03ec35-2c01-4d6d-bb57-1fb2ef7c83bb",
+            "Value": {
+                "id": "11b7f47e-d7ac-437a-9ee9-79ff13499558",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonDelete\/objButtonDelete.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "22a5c95a-a73f-413e-bc60-48c772de063f",
             "Value": {
                 "id": "5a451f2e-e0eb-4cf9-a0d2-958d71e84aff",
@@ -378,6 +397,25 @@
                 ],
                 "resourcePath": "views\/2ca12c53-d2f6-473d-a39f-19c0a6f9db47.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "2cf2b714-9819-4ce8-9519-5e092fee2b7b",
+            "Value": {
+                "id": "1b5af358-0dd4-4324-9df0-6379afa134db",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprRemove\/sprRemove.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

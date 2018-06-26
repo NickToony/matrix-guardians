@@ -9,7 +9,8 @@
 enum TOOL {
 	NONE,
 	DIG,
-	STORAGE
+	STORAGE,
+	REMOVE
 }
 tool = TOOL.NONE;
 
