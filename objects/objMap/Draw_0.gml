@@ -11,6 +11,7 @@ if (selecting) {
 	switch (tool) {
 		case TOOL.DIG:
 		case TOOL.STORAGE:
+		case TOOL.CHARGE:
 		case TOOL.BUILD:
 		case TOOL.CANCEL:
 		case TOOL.REMOVE:

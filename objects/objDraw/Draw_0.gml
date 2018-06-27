@@ -56,6 +56,8 @@ if(ds_exists(ds_depthgrid, ds_type_grid)) {
 			} else {
 				draw_self();
 			}
+			
+			event_user(15);
 		}
 		yy+=1;
 	}

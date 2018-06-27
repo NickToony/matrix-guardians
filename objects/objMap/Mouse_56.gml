@@ -20,12 +20,22 @@ if (selection != noone && selectionValid) {
 			break;
 			
 		case TOOL.STORAGE:
+		case TOOL.CHARGE:
 			for (var i = 0; i < array_length_1d(arr); i ++) {
 				var tile = arr[i];
 				var tileX = tile[0];
 				var tileY = tile[1];
 	
-				SetTileRoom(tileX, tileY, ROOM.STORAGE, sprFloorStorage);
+				switch (tool) {
+					case TOOL.STORAGE:
+					SetTileRoom(tileX, tileY, ROOM.STORAGE, sprFloorStorage);
+					break;
+					
+					case TOOL.CHARGE:
+					SetTileRoom(tileX, tileY, ROOM.CHARGING, sprFloorCharging);
+					break;
+				}
+				
 			}
 			PlayUISound(sndPlaceRoom);	
 			break;

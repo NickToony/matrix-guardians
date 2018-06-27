@@ -7,3 +7,4 @@ event_inherited();
 tool = TOOL.REMOVE;
 text = "REMOVE";
 icon = sprRemove;
+tooltip = "Remove room tiles.";

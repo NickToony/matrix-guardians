@@ -12,14 +12,12 @@ enum TOOL {
 	STORAGE,
 	REMOVE,
 	BUILD,
-	CANCEL
+	CANCEL,
+	CHARGE
 }
 tool = TOOL.NONE;
 
-enum ROOM {
-	NONE,
-	STORAGE
-}
+InitRooms();
 
 mapWidth = 32;
 mapHeight = mapWidth*2;

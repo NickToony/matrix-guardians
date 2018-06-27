@@ -25,10 +25,11 @@ if (state == STATE.IDLE) {
 	var node = ds_stack_top(path);
 	var tx = node[0];
 	var ty = node[1];
+	var currentSpeed = (energy <= 0) ? crawlSpeed : moveSpeed;
 	tx = WorldX(tx, ty);
 	ty = WorldY(tx, ty);
 	
-	if (abs(tx - x) <= moveSpeed && abs(ty - y) <= moveSpeed) {
+	if (abs(tx - x) <= currentSpeed && abs(ty - y) <= currentSpeed) {
 		ds_stack_pop(path);
 		
 		if (ds_stack_empty(path)) {
@@ -43,8 +44,8 @@ if (state == STATE.IDLE) {
 		}
 	} else {
 		var angle = point_direction(x, y, tx, ty);
-		x += lengthdir_x(moveSpeed, angle);
-		y += lengthdir_y(moveSpeed, angle);
+		x += lengthdir_x(currentSpeed, angle);
+		y += lengthdir_y(currentSpeed, angle);
 		if (x < tx) {
 			if (y > ty) {
 				// top right
@@ -108,6 +109,15 @@ if (state == STATE.IDLE) {
 				state = STATE.IDLE;	
 			} else { taskProgress ++ }
 		break;
+		
+		case TASK.CHARGE:
+			if (taskProgress > taskTime) {
+				energy = totalEnergy;
+				task = TASK.IDLE;
+				state = STATE.IDLE;	
+			} else { taskProgress += max(1, chargeSpeed * ds_list_size(global.ROOMS[ROOM.CHARGING])); }
+		break;
+		
 		
 		default:
 		show_debug_message("FAIL TASK");

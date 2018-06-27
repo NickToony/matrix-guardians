@@ -7,3 +7,4 @@ event_inherited();
 tool = TOOL.CANCEL;
 text = "CANCEL";
 icon = sprCancel;
+tooltip = "Cancel any orders placed.";

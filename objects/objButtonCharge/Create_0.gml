@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-tool = TOOL.STORAGE;
-text = "STORAGE";
+tool = TOOL.CHARGE;
+text = "CHARGE";
 icon = sprStorage;
-tooltip = "A room to store all that precious metal!";
+tooltip = "A place for your bots to recharge. The bigger the rooms, the faster they recharge.";

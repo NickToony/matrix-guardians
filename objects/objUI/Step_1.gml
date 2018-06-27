@@ -1,5 +1,5 @@
-var mouseX = device_mouse_x_to_gui(0);
-var mouseY = device_mouse_y_to_gui(0);
+mouseX = device_mouse_x_to_gui(0);
+mouseY = device_mouse_y_to_gui(0);
 over = false;
 
 if (mouseX >= bbox_left && mouseX <= bbox_right)

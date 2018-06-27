@@ -4,6 +4,7 @@ switch (tool) {
 	case TOOL.DIG: 
 	case TOOL.STORAGE:
 	case TOOL.BUILD:
+	case TOOL.CHARGE:
 	case TOOL.CANCEL:
 	case TOOL.REMOVE:
 		selecting = true;
