@@ -1,6 +1,6 @@
 switch (argument0) {		
 	case ROOM.CHARGING:
-		return sprFloorCharging;
+		return (irandom(10) <= 1) ? sprFloorChargingBattery : sprFloorCharging;
 	
 	case ROOM.STORAGE:
 		return sprFloorStorage;

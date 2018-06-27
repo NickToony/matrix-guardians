@@ -22,9 +22,11 @@ if (!surface_exists(surface) || redraw) {
 	   
 		if (!objMap.fogOfWar || tile.isVisible > 0) {
 			if (tile.roomType != ROOM.NONE && tile.roomSprite != noone) {
-				draw_sprite(tile.roomSprite, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
+				var index = irandom(sprite_get_number(tile.roomSprite));
+				draw_sprite(tile.roomSprite, index, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
 			} else {
-				draw_sprite(tile.sprite_index, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
+				var index = irandom(sprite_get_number(tile.sprite_index));
+				draw_sprite(tile.sprite_index, index, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
 			}
 			if (tile.taskDig || tile.taskBuild) {
 				var col = tile.accessible ? c_teal : c_red;
