@@ -25,6 +25,8 @@ if (selecting) {
 			
 			case TOOL.STORAGE:
 			case TOOL.CHARGE:
+			case TOOL.ARCHIVE:
+			case TOOL.ASSEMBLY:
 				for (var i = 0; i < array_length_1d(arr); i ++) {
 					var tile = arr[i];
 					var tileX = tile[0];
@@ -37,6 +39,14 @@ if (selecting) {
 					
 						case TOOL.CHARGE:
 						SetTileRoom(tileX, tileY, ROOM.CHARGING);
+						break;
+						
+						case TOOL.ASSEMBLY:
+						SetTileRoom(tileX, tileY, ROOM.ASSEMBLY);
+						break;
+						
+						case TOOL.ARCHIVE:
+						SetTileRoom(tileX, tileY, ROOM.ARCHIVE);
 						break;
 					}
 				

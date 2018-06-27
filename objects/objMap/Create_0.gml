@@ -14,7 +14,9 @@ enum TOOL {
 	BUILD,
 	CANCEL,
 	CHARGE,
-	SPAWN
+	SPAWN,
+	ASSEMBLY,
+	ARCHIVE
 }
 tool = TOOL.NONE;
 toolCost = 0;

@@ -7,6 +7,8 @@ switch (tool) {
 	case TOOL.CHARGE:
 	case TOOL.CANCEL:
 	case TOOL.REMOVE:
+	case TOOL.ASSEMBLY:
+	case TOOL.ARCHIVE:
 		selecting = true;
 		selectionRefresh = 0;
 		mx = objCamera.mouseTileX;

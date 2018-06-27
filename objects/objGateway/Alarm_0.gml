@@ -8,4 +8,11 @@ if (!ds_stack_empty(spawnQueue)) {
 	var y2 = GetNeighbourY(x1, y1, TOP_RIGHT);
 	var instance = CreateUnit(x2, y2, unit);
 	instance.gateway = true;
+} else {
+	if (instance_number(objKillBot) < floor(ds_list_size(global.ROOMS[ROOM.ASSEMBLY])/TILES_PER_KILLBOT)) {
+		CreateUnitGateway(objKillBot);
+	}
+	if (instance_number(objDrone) < floor(ds_list_size(global.ROOMS[ROOM.ARCHIVE])/TILES_PER_DRONE)) {
+		CreateUnitGateway(objDrone);
+	}
 }

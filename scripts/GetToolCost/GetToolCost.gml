@@ -15,6 +15,14 @@ switch (tool) {
 	case TOOL.SPAWN:
 		cost = 300;
 		break;
+		
+	case TOOL.ARCHIVE:
+		cost = 150;
+		break;
+		
+	case TOOL.ASSEMBLY:
+		cost = 60;
+		break;
 	
 	default:
 		cost = 0;

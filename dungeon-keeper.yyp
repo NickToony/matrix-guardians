@@ -172,6 +172,25 @@
             }
         },
         {
+            "Key": "0dd5ba6c-ba1d-4181-a79d-72338bcaac18",
+            "Value": {
+                "id": "9ecbcd63-1a4c-4171-9fa4-46675761048d",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objKillBot\/objKillBot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1086ebaa-2d2e-4b47-8304-60f981c06b48",
             "Value": {
                 "id": "8864986d-4a61-40b0-9800-c843c112b3df",
@@ -358,6 +377,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/objButtonDelete\/objButtonDelete.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1fea5920-9972-4a5f-a86f-177b19eaad78",
+            "Value": {
+                "id": "287a72c3-6454-426a-bc9b-6893c2eea00a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objFightingUnit\/objFightingUnit.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1274,6 +1312,25 @@
             }
         },
         {
+            "Key": "67a7bca1-9213-4361-a161-6e55b96b291a",
+            "Value": {
+                "id": "a6b71f5f-99ac-44e8-968d-0fba7c78adf7",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonArchive\/objButtonArchive.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "68201c14-c0ea-4ecb-8951-f4daf6d3b012",
             "Value": {
                 "id": "18d399e9-3f9b-4735-80c6-1445de6d5436",
@@ -1575,6 +1632,25 @@
                 ],
                 "resourcePath": "sprites\/sprWall\/sprWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8773217a-fc47-4f9f-9676-fac3fd5a5783",
+            "Value": {
+                "id": "443e5d74-e290-4c0d-a5db-ae5b8a6066b3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objDrone\/objDrone.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2600,6 +2676,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/objRoomba\/objRoomba.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d66d672a-e280-46a6-a523-1509b0f6a817",
+            "Value": {
+                "id": "f0d4eb28-323e-40af-9c0b-95d6588aab39",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonAssembly\/objButtonAssembly.yy",
                 "resourceType": "GMObject"
             }
         },

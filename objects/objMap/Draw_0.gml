@@ -34,6 +34,8 @@ if (selecting) {
 		case TOOL.BUILD:
 		case TOOL.CANCEL:
 		case TOOL.REMOVE:
+		case TOOL.ASSEMBLY:
+		case TOOL.ARCHIVE:
 		
 			var cost = GetToolCost(tool, noone);
 			var xx = WorldX(objCamera.mouseTileX, objCamera.mouseTileY);

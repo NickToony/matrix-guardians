@@ -5,5 +5,5 @@ switch (argument0) {
 	case ROOM.STORAGE:
 		return sprFloorStorage;
 		
-	default: return noone;
+	default: return sprFloorStorage;
 }
