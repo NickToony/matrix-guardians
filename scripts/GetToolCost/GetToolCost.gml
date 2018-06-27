@@ -27,6 +27,10 @@ switch (tool) {
 	case TOOL.ASSEMBLY:
 		cost = 60;
 		break;
+		
+	case TOOL.GENERATOR:
+		cost = 500;
+		break;
 	
 	default:
 		cost = 0;

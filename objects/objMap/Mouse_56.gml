@@ -117,12 +117,33 @@ if (selecting) {
 				instance.overclocked += room_speed * 15;
 				
 			break;
+			
+			case TOOL.GENERATOR:
+				var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+				valid = tile != noone && tile.object_index == objLavaTile && tile.connected;
+				if (valid) {
+					with (objGenerator) {
+						if (gridX == tile.gridX && gridY == tile.gridY) {
+							valid = false;	
+						}
+					}
+				}
+				if (valid) {
+					CreateBuilding(tile.gridX, tile.gridY, objGenerator, false);
+				}
+			break;
 		
 			default:
 			if (tool != TOOL.NONE) {
 				PlayUISound(sndFailed);
 			}
 			break;
+		}
+	}
+	
+	if (!valid) {
+		if (tool != TOOL.NONE) {
+			PlayUISound(sndFailed);
 		}
 	}
 }

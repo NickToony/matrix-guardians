@@ -894,6 +894,25 @@
             }
         },
         {
+            "Key": "416f810d-aaab-4bbf-9f95-d8f806e7b04a",
+            "Value": {
+                "id": "65e2fa9e-e984-402c-982a-6400074a6ca0",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMultiButtonBuild\/objMultiButtonBuild.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4186b5ac-d9f1-4995-b7c9-16ed30a0a5c6",
             "Value": {
                 "id": "478972a6-561d-48eb-9278-0f02cd7aaeff",
@@ -2580,7 +2599,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "objects\/objButtonBuild\/objButtonBuild.yy",
+                "resourcePath": "objects\/objButtonGenerator\/objButtonGenerator.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2962,6 +2981,25 @@
                 ],
                 "resourcePath": "views\/e80c377d-7867-498d-bb66-ca95044432d1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e8686b35-9406-4717-9258-12f6a765f05a",
+            "Value": {
+                "id": "abd07a0a-d367-41d7-8228-95a9729d61da",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objGenerator\/objGenerator.yy",
+                "resourceType": "GMObject"
             }
         },
         {

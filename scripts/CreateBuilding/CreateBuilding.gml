@@ -1,6 +1,7 @@
 var xx = argument0;
 var yy = argument1;
 var obj = argument2;
+var replaceFloor = argument3;
 
 var instance = instance_create_layer(0, 0, objControl.layerBuildings, obj);
 //yy += floor(instance.height/2);
@@ -10,6 +11,8 @@ instance.y = WorldY(xx, yy) - 10;
 instance.depth = instance.y + objMap.tileHeight;
 instance.gridX = xx;
 instance.gridY = yy;
+
+if (!replaceFloor) return instance;
 
 SetTile(xx, yy, objBuildingTile);
 if (instance.width == 2) {

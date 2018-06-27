@@ -38,6 +38,18 @@ if (selecting) {
 			}
 			draw = true;
 			break;
+		case TOOL.GENERATOR:
+			draw = true;
+			var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+			valid = tile != noone && tile.object_index == objLavaTile && tile.connected;
+			if (valid) {
+				with (objGenerator) {
+					if (gridX == tile.gridX && gridY == tile.gridY) {
+						valid = false;	
+					}
+				}
+			}
+			break;
 		case TOOL.DIG:
 		case TOOL.STORAGE:
 		case TOOL.CHARGE:

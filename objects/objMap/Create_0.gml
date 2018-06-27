@@ -17,7 +17,8 @@ enum TOOL {
 	SPAWN,
 	ASSEMBLY,
 	ARCHIVE,
-	OVERCLOCK
+	OVERCLOCK,
+	GENERATOR
 }
 tool = TOOL.NONE;
 toolCost = 0;
@@ -73,7 +74,7 @@ var xx = GetNeighbourX(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);
 var yy = GetNeighbourY(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);
 var mx = GetNeighbourX(xx, yy, BOTTOM_LEFT);
 var my = GetNeighbourY(xx, yy, BOTTOM_LEFT);
-CreateBuilding(mx, my, objGateway);
+CreateBuilding(mx, my, objGateway, true);
 
 // Base units
 repeat (5) {
