@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "099b1a2d-7f0c-41d0-ba6e-ac49d8e312f1",
+            "Value": {
+                "id": "295344f8-a50b-4812-8bb3-91bc7d46ea33",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objTileTrap\/objTileTrap.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "09eabd5c-1e9b-43dd-a516-6850a2373573",
             "Value": {
                 "id": "4b521f16-7d34-472a-addc-08d0fd950c02",
@@ -3057,6 +3076,25 @@
                 ],
                 "resourcePath": "options\/mac\/options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f46259c0-3123-4156-a455-58f9b2cbc4bc",
+            "Value": {
+                "id": "9c6ecad9-b73f-494c-a262-57981bd6a812",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonTrap\/objButtonTrap.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -18,7 +18,8 @@ enum TOOL {
 	ASSEMBLY,
 	ARCHIVE,
 	OVERCLOCK,
-	GENERATOR
+	GENERATOR,
+	TRAP
 }
 tool = TOOL.NONE;
 toolCost = 0;

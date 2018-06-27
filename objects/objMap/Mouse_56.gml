@@ -132,6 +132,14 @@ if (selecting) {
 					CreateBuilding(tile.gridX, tile.gridY, objGenerator, false);
 				}
 			break;
+			
+			case TOOL.TRAP:
+				var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+				valid = tile != noone && tile.object_index == objFloorTile && tile.connected && tile.roomType == ROOM.NONE;
+				if (valid) {
+					SetTile(tile.gridX, tile.gridY, objTileTrap);
+				}
+			break;
 		
 			default:
 			if (tool != TOOL.NONE) {

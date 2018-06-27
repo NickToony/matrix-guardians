@@ -1,5 +1,5 @@
 event_inherited();
 
-buttons = [objButtonGenerator];
+buttons = [objButtonGenerator, objButtonTrap];
 text = "BUILD";
 icon = sprBuild;

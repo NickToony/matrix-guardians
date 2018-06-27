@@ -50,6 +50,11 @@ if (selecting) {
 				}
 			}
 			break;
+		case TOOL.TRAP:
+			draw = true;
+			var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+			valid = tile != noone && tile.object_index == objFloorTile && tile.connected && tile.roomType == ROOM.NONE;
+			break;
 		case TOOL.DIG:
 		case TOOL.STORAGE:
 		case TOOL.CHARGE:
