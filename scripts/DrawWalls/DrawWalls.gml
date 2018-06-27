@@ -1,8 +1,12 @@
 var currentTile = argument0;
 
+if (!currentTile.walls) return;
+
 for (var dir = 0; dir < array_length_1d(currentTile.walled); dir++) {
 	var wall = currentTile.walled[dir];
-	if (wall == noone) continue;
+	if (wall == noone) {
+		wall = sprWall;	
+	}
 	
 	var tile;
 
@@ -25,6 +29,10 @@ for (var dir = 0; dir < array_length_1d(currentTile.walled); dir++) {
 	}
 
 	if (tile != noone && tile.solid) continue;
+	
+	if (tile.roomType != ROOM.NONE) {
+		wall = GetWallForRoom(tile.roomType);	
+	}
 
 	var xx = 0, yy = 0, ind = 0;
 	var sprite = wall;

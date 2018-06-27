@@ -571,6 +571,25 @@
             }
         },
         {
+            "Key": "313639cf-095a-4d8e-857d-dd84ee992b40",
+            "Value": {
+                "id": "471ff19a-d8d6-4ff6-a5df-2daebce82ff4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprFloorChargingBattery\/sprFloorChargingBattery.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "324ac93f-7687-440b-b0e0-aee8cb680afb",
             "Value": {
                 "id": "59e8eaa9-154e-48d9-8156-f5813a4e809a",
@@ -1825,6 +1844,25 @@
             }
         },
         {
+            "Key": "9c2f20f6-6eb4-42ab-873d-375f135dd512",
+            "Value": {
+                "id": "d06e4f98-e5e5-4a3b-92d5-b7b1d8c02ecb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/GetWallForRoom\/GetWallForRoom.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9c8dc584-8563-4e1f-86a9-39c5dfa1245f",
             "Value": {
                 "id": "6dca694c-c94a-41e4-9fa3-a8499e57faf6",
@@ -2816,6 +2854,7 @@
         "17fd9d1d-15ff-4fd3-b757-734a8d68f68c",
         "a0173426-3aea-42ba-a733-0a999a7f3718",
         "b693155f-ec46-4ee4-a238-a3b3824adf00",
+        "9c2f20f6-6eb4-42ab-873d-375f135dd512",
         "aaf0058c-f6d0-497e-a9c6-d802f1786ebb",
         "ac8db200-3279-4d3e-b8e0-67837eed0b04",
         "efeeafe2-bafe-40d1-ac5c-1362a2fd491c",

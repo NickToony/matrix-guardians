@@ -21,3 +21,4 @@ roomSprite = noone;
 buildable = false;
 taskBuild = false;
 isVisible = false;
+walls = false;

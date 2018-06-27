@@ -102,7 +102,7 @@ if (state == STATE.IDLE) {
 				} else {
 					var taskDig = currentTile.taskDig;
 					var tile = SetTile(taskX, taskY, objBlockTile);
-					SetTileWalls(tile, sprWall);
+					SetTileWalls(tile, true);
 					tile.taskDig = taskDig;
 				}
 				task = TASK.IDLE;
