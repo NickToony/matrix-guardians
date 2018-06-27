@@ -1,3 +1,5 @@
+event_inherited();
+
 image_blend = (active || clicked) ? c_white : c_gray;
 
 if (active) {

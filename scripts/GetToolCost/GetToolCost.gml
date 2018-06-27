@@ -16,6 +16,10 @@ switch (tool) {
 		cost = 300;
 		break;
 		
+	case TOOL.OVERCLOCK:
+		cost = 100;
+		break;
+		
 	case TOOL.ARCHIVE:
 		cost = 150;
 		break;

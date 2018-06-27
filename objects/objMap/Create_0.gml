@@ -16,7 +16,8 @@ enum TOOL {
 	CHARGE,
 	SPAWN,
 	ASSEMBLY,
-	ARCHIVE
+	ARCHIVE,
+	OVERCLOCK
 }
 tool = TOOL.NONE;
 toolCost = 0;

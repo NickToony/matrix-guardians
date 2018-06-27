@@ -18,6 +18,12 @@ if (gateway) {
 }
 
 depth = y + 10 + objMap.tileHeight/2;
+var multiplier = 1;
+if (overclocked) {
+	overclocked -= 1;
+	multiplier = 2;
+	energy = totalEnergy;
+}
 
 if (state == STATE.IDLE) {
 	 
@@ -25,7 +31,7 @@ if (state == STATE.IDLE) {
 	var node = ds_stack_top(path);
 	var tx = node[0];
 	var ty = node[1];
-	var currentSpeed = (energy <= 0) ? crawlSpeed : moveSpeed;
+	var currentSpeed = (energy <= 0) ? crawlSpeed : moveSpeed * multiplier;
 	tx = WorldX(tx, ty);
 	ty = WorldY(tx, ty);
 	
@@ -83,7 +89,7 @@ if (state == STATE.IDLE) {
 				}
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
-			} else { taskProgress ++ }
+			} else { taskProgress += multiplier }
 		break;
 		
 		case TASK.FLOOR:
@@ -91,7 +97,7 @@ if (state == STATE.IDLE) {
 				SetTile(taskX, taskY, objFloorTile);
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
-			} else { taskProgress ++ }
+			} else { taskProgress += multiplier }
 		break;
 		
 		case TASK.WALL:
@@ -107,7 +113,7 @@ if (state == STATE.IDLE) {
 				}
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
-			} else { taskProgress ++ }
+			} else { taskProgress += multiplier }
 		break;
 		
 		case TASK.CHARGE:
@@ -115,7 +121,7 @@ if (state == STATE.IDLE) {
 				energy = totalEnergy;
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
-			} else { taskProgress += max(1, chargeSpeed * ds_list_size(global.ROOMS[ROOM.CHARGING])); }
+			} else { taskProgress += max(1, chargeSpeed * ds_list_size(global.ROOMS[ROOM.CHARGING])) * multiplier; }
 		break;
 		
 		case TASK.PICKUP:

@@ -1407,6 +1407,25 @@
             }
         },
         {
+            "Key": "6f6e9a12-0d77-41d8-af21-2e6c06b83dca",
+            "Value": {
+                "id": "b54c4c6a-74ad-42c8-9c93-e2ed21fb22ea",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonOverclock\/objButtonOverclock.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "70ec2748-465e-4ea1-8751-6140e1a107da",
             "Value": {
                 "id": "226396f9-fe96-42d8-94d5-47be45935a57",

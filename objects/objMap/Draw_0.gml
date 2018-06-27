@@ -20,6 +20,7 @@ if (selecting) {
 } else {
 	
 	var valid = true;
+	var draw = false;
 	switch (tool) {
 		case TOOL.SPAWN:
 			var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
@@ -27,7 +28,16 @@ if (selecting) {
 			if (tile != noone && !tile.solid && tile.connected) {
 				valid = true;
 			}
-			// continue
+			draw = true;
+			break;
+		case TOOL.OVERCLOCK:
+			var instance = instance_nearest(mouse_x, mouse_y, objUnit);
+			valid = false;
+			if (instance && point_distance(mouse_x, mouse_y, objUnit.x, objUnit.y) < 128) {
+				valid = true;
+			}
+			draw = true;
+			break;
 		case TOOL.DIG:
 		case TOOL.STORAGE:
 		case TOOL.CHARGE:
@@ -36,20 +46,24 @@ if (selecting) {
 		case TOOL.REMOVE:
 		case TOOL.ASSEMBLY:
 		case TOOL.ARCHIVE:
-		
-			var cost = GetToolCost(tool, noone);
-			var xx = WorldX(objCamera.mouseTileX, objCamera.mouseTileY);
-			var yy = WorldY(objCamera.mouseTileX, objCamera.mouseTileY);
-			draw_sprite_ext(sprBlock, 0, xx, yy, 1, 1, 0, (cost <= global.STORED_METALS && valid) ? c_green : c_red, 0.3);
+			draw = true;
 			
-			if (cost > 0) {
-				draw_set_font(fntFloating);
-				draw_set_color(cost <= global.STORED_METALS ? c_white : c_red);
-				draw_set_halign(fa_left);
-				draw_set_valign(fa_center);
-				draw_text(mouse_x + 64, mouse_y, string(cost));	
-			}
 		break;
+	}
+	
+	if (draw) {
+		var cost = GetToolCost(tool, noone);
+		var xx = WorldX(objCamera.mouseTileX, objCamera.mouseTileY);
+		var yy = WorldY(objCamera.mouseTileX, objCamera.mouseTileY);
+		draw_sprite_ext(sprBlock, 0, xx, yy, 1, 1, 0, (cost <= global.STORED_METALS && valid) ? c_green : c_red, 0.3);
+			
+		if (cost > 0) {
+			draw_set_font(fntFloating);
+			draw_set_color(cost <= global.STORED_METALS ? c_white : c_red);
+			draw_set_halign(fa_left);
+			draw_set_valign(fa_center);
+			draw_text(mouse_x + 64, mouse_y, string(cost));	
+		}
 	}
 	
 }

@@ -39,3 +39,4 @@ energy = totalEnergy;
 chargeTime = room_speed*10;
 chargeSpeed = 0.25;
 metals = 0;
+overclocked = 0;

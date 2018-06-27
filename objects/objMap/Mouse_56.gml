@@ -107,6 +107,16 @@ if (selecting) {
 					CreateUnit(tile.gridX, tile.gridY, objRoomba);
 				}
 			break;
+			
+			case TOOL.OVERCLOCK:
+				var instance = instance_nearest(mouse_x, mouse_y, objUnit);
+				valid = false;
+				if (instance && point_distance(mouse_x, mouse_y, objUnit.x, objUnit.y) < 64) {
+					valid = true;
+				}
+				instance.overclocked += room_speed * 15;
+				
+			break;
 		
 			default:
 			if (tool != TOOL.NONE) {

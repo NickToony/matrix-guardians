@@ -1,5 +1,5 @@
 event_inherited();
 
-buttons = [objButtonRoomba];
+buttons = [objButtonRoomba, objButtonOverclock];
 text = "ABILITIES";
 icon = sprBuild;
