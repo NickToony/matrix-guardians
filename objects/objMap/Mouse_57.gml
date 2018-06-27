@@ -1,2 +1,4 @@
-tool = TOOL.NONE;
-selecting = false;
+if (!objCamera.messageActive) {
+	tool = TOOL.NONE;
+	selecting = false;
+}

@@ -8,3 +8,4 @@ tool = TOOL.CHARGE;
 text = "CHARGE";
 icon = sprStorage;
 tooltip = "A place for your bots to recharge. The bigger the rooms, the faster they recharge.";
+

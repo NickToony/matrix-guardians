@@ -10,6 +10,10 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 	var currentX = UnworldX(x, y);
 	var currentY = UnworldY(x, y);
 	
+	if (energy <= 0) {
+		TutorialTrigger("WARNING! WARNING! A ROBOT IS NOT FUNCTIONING AT PEAK EFFICIENCY! PLACE A CHARGING ROOM NEARBY!", TUTORIAL.LOW_CHARGE);	
+	}
+	
 	if (energy <= 10 && !ds_list_empty(global.ROOMS[ROOM.CHARGING])) {
 		var priority = ds_priority_create();
 		

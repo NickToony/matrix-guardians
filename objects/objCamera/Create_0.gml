@@ -44,3 +44,13 @@ height = browser_height;
 fullscreen = false;
 fullscreenLast = fullscreen;
 canvas_fullscreen(base_size, width, height);
+
+TutorialInit()
+messages = ds_queue_create();
+message = noone;
+messageWidth = 500;
+messageActive = false;
+ShowMessage("WELCOME HUMAN! IT IS TIME TO ASSIMILATE THIS REALM AND ANY ORGANIC LIFE FORMS.");
+ShowMessage("WE'VE PROVIDED SOME ROOMBA XZ5000'S - THESE NEW MODELS CAN DO WAY MORE THAN JUST VACUUM!");
+ShowMessage("TRY ORDERING THEM TO DIG OUT SOME TUNNELS, AND BEGIN EXTRACTING METALS.");
+alarm[0] = room_speed * 10;

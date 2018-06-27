@@ -96,6 +96,25 @@
             }
         },
         {
+            "Key": "0499a60c-bcfa-4763-abd0-310dbb1aba30",
+            "Value": {
+                "id": "3f2e640d-6979-4e06-aa83-fb0d63f599c4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/TutorialTrigger\/TutorialTrigger.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05a6ba6a-2213-417c-b216-bc7539342f68",
             "Value": {
                 "id": "c8e07f27-5c12-4036-9748-67cfeabc86cd",
@@ -700,6 +719,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/CancelTasks\/CancelTasks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "38a77372-e12a-46a2-b370-c258d086720b",
+            "Value": {
+                "id": "987a5862-07b5-40e6-b47f-dc3c129ed56f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/TutorialInit\/TutorialInit.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1939,6 +1977,25 @@
             }
         },
         {
+            "Key": "9d9e32e4-6779-49bb-8d0c-2367cea65721",
+            "Value": {
+                "id": "70ee4b98-48ed-49b4-8aae-ff9b10645e25",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/ShowMessage\/ShowMessage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9e364ceb-8e20-45de-a6aa-73ac3a24e47c",
             "Value": {
                 "id": "9aab79c3-9304-4430-a411-6c6344a6338e",
@@ -2164,6 +2221,25 @@
                 ],
                 "resourcePath": "scripts\/PlayGameSound\/PlayGameSound.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b2bf3334-6a4c-473c-bf71-15aa223432e6",
+            "Value": {
+                "id": "c71012e9-dab4-40ae-b9ba-ed87f4f5c438",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/fntMessage\/fntMessage.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -2956,7 +3032,10 @@
         "df84d904-c601-49c3-a43b-c69ad80c61b1",
         "b466e6b7-2b63-4370-a9aa-b782ed4c0658",
         "b0e2ff56-b9ca-433b-97c4-3acfc2b7838d",
-        "95fb3f98-9e52-45b9-b9f6-675537e910f5"
+        "95fb3f98-9e52-45b9-b9f6-675537e910f5",
+        "9d9e32e4-6779-49bb-8d0c-2367cea65721",
+        "0499a60c-bcfa-4763-abd0-310dbb1aba30",
+        "38a77372-e12a-46a2-b370-c258d086720b"
     ],
     "tutorial": ""
 }
