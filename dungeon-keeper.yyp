@@ -514,6 +514,25 @@
             }
         },
         {
+            "Key": "29d9d66e-4402-4e7a-99b0-0c77a10d8934",
+            "Value": {
+                "id": "73cfd1e7-386a-4fb7-8b45-145402cff46f",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "fonts\/fntFloating\/fntFloating.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "2ca12c53-d2f6-473d-a39f-19c0a6f9db47",
             "Value": {
                 "id": "b54c3b3a-53e1-47fd-ba52-0801c790ff70",
@@ -1061,6 +1080,25 @@
                     "default"
                 ],
                 "resourcePath": "scripts\/WorldX\/WorldX.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5dbed533-1de9-4554-aad8-b6ceec46569b",
+            "Value": {
+                "id": "dd64fba8-7f00-483f-83b1-09cbc4120fec",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/GetToolCost\/GetToolCost.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2900,6 +2938,7 @@
         "26368248-a3e2-465f-b6dd-53adc0e6eabd",
         "cc061d37-cd99-46e4-805b-929cb1637700",
         "35c46fc1-f779-4e5b-b998-bc23b1849f56",
+        "5dbed533-1de9-4554-aad8-b6ceec46569b",
         "34d5956f-a884-429b-8480-7b7df4a41746",
         "5d8e4b5d-0cbb-44dc-85bc-d7a32bc42684",
         "3fa9cc81-5328-4e18-b37d-d48ad33c48bd",

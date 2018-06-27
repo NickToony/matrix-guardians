@@ -16,6 +16,7 @@ enum TOOL {
 	CHARGE
 }
 tool = TOOL.NONE;
+toolCost = 0;
 
 InitRooms();
 

@@ -4,6 +4,10 @@ selecting = false;
 
 // update selection
 RecalcSelection();
+toolCost = GetToolCost(tool, selection);
+if (toolCost > global.STORED_METALS) {
+	selectionValid = false;
+}
 if (selection != noone && selectionValid) {
 	var arr = RegionToArray(selection);
 	
