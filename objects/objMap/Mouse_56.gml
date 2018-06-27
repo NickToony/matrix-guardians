@@ -28,11 +28,11 @@ if (selection != noone && selectionValid) {
 	
 				switch (tool) {
 					case TOOL.STORAGE:
-					SetTileRoom(tileX, tileY, ROOM.STORAGE, sprFloorStorage);
+					SetTileRoom(tileX, tileY, ROOM.STORAGE);
 					break;
 					
 					case TOOL.CHARGE:
-					SetTileRoom(tileX, tileY, ROOM.CHARGING, sprFloorCharging);
+					SetTileRoom(tileX, tileY, ROOM.CHARGING);
 					break;
 				}
 				
@@ -46,7 +46,7 @@ if (selection != noone && selectionValid) {
 				var tileX = tile[0];
 				var tileY = tile[1];
 	
-				SetTileRoom(tileX, tileY, ROOM.NONE, noone);
+				SetTileRoom(tileX, tileY, ROOM.NONE);
 			}
 			PlayUISound(sndFailed);	
 			break;

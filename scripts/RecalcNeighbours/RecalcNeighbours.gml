@@ -13,11 +13,17 @@ argument0.connected = argument0.connectable
 	||  (argument0.topRight != noone && argument0.topRight.connectable)
 	||  (argument0.bottomLeft != noone && argument0.bottomLeft.connectable)
 	||  (argument0.bottomRight != noone && argument0.bottomRight.connectable);
-argument0.isVisible = argument0.accessible
-	|| (argument0.topLeft != noone && argument0.topLeft.accessible)
-	||  (argument0.topRight != noone && argument0.topRight.accessible)
-	||  (argument0.bottomLeft != noone && argument0.bottomLeft.accessible)
-	||  (argument0.bottomRight != noone && argument0.bottomRight.accessible);;
+//argument0.isVisible = argument0.accessible
+//	|| (argument0.topLeft != noone && argument0.topLeft.accessible)
+//	||  (argument0.topRight != noone && argument0.topRight.accessible)
+//	||  (argument0.bottomLeft != noone && argument0.bottomLeft.accessible)
+//	||  (argument0.bottomRight != noone && argument0.bottomRight.accessible);;
+	
+argument0.isVisible = argument0.accessible ? 3 : 0;
+if (argument0.topLeft != noone) argument0.isVisible = max(argument0.isVisible, argument0.topLeft.isVisible-1);
+if (argument0.topRight != noone) argument0.isVisible = max(argument0.isVisible, argument0.topRight.isVisible-1);
+if (argument0.bottomLeft != noone) argument0.isVisible = max(argument0.isVisible, argument0.bottomLeft.isVisible-1);
+if (argument0.bottomRight != noone) argument0.isVisible = max(argument0.isVisible, argument0.bottomRight.isVisible-1);
 	
 
 argument0.row.redraw = true;

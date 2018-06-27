@@ -20,7 +20,7 @@ if (!surface_exists(surface) || redraw) {
 	for (var i = 0; i < ds_list_size(tiles); i ++) {
 		var tile = ds_list_find_value(tiles, i);
 	   
-		if (!objMap.fogOfWar || tile.isVisible) {
+		if (!objMap.fogOfWar || tile.isVisible > 0) {
 			if (tile.roomType != ROOM.NONE && tile.roomSprite != noone) {
 				draw_sprite(tile.roomSprite, 0, tile.x + objMap.tileWidth, SURFACE_HEIGHT);
 			} else {

@@ -12,7 +12,9 @@ enum TASK {
 	DIG,
 	FLOOR,
 	WALL,
-	CHARGE
+	CHARGE,
+	PICKUP,
+	DROP
 }
 
 path = noone;
@@ -23,15 +25,17 @@ state = STATE.IDLE;
 task = TASK.IDLE;
 taskX = noone;
 taskY = noone;
+taskObj = noone;
 taskProgress = 0;
 gateway = false;
 
-moveSpeed = 8;
-crawlSpeed = 4;
+moveSpeed = 6;
+crawlSpeed = 3;
 taskTime = 0;
 image_speed = 0;
 
-totalEnergy = 20;
+totalEnergy = 60;
 energy = totalEnergy;
 chargeTime = room_speed*10;
-chargeSpeed = 0.5;
+chargeSpeed = 0.25;
+metals = 0;

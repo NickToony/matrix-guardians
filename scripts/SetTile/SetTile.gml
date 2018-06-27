@@ -55,27 +55,29 @@ if (argument2 != noone) {
 	}
 	
 	// Recalc neighbours
-	RecalcNeighbours(instance); 
-	RecalcNeighbours(instance.topLeft);
-	RecalcNeighbours(instance.topRight);
-	RecalcNeighbours(instance.bottomLeft);
-	RecalcNeighbours(instance.bottomRight);
+	//RecalcNeighbours(instance); 
+	//RecalcNeighbours(instance.topLeft);
+	//RecalcNeighbours(instance.topRight);
+	//RecalcNeighbours(instance.bottomLeft);
+	//RecalcNeighbours(instance.bottomRight);
+	RecalcRegion(xx, yy, 2, 2); 
 	
 	if (instance.floorable) {
 		AddFloorTask(xx, yy);
 	}
 	
 	return instance;
-} else {
+} else { 
 	// Attach to the tile grid
 	ds_grid_set(objMap.grid, argument0, argument1, noone);
 	// Set pathfinding solid
 	mp_grid_add_cell(objMap.pathfinding, xx, yy);
 	
-	RecalcNeighbours(GetTileDirection(xx, yy, TOP_LEFT));
-	RecalcNeighbours(GetTileDirection(xx, yy, TOP_RIGHT));
-	RecalcNeighbours(GetTileDirection(xx, yy, BOTTOM_LEFT));
-	RecalcNeighbours(GetTileDirection(xx, yy, BOTTOM_RIGHT));
+	//RecalcNeighbours(GetTileDirection(xx, yy, TOP_LEFT));
+	//RecalcNeighbours(GetTileDirection(xx, yy, TOP_RIGHT));
+	//RecalcNeighbours(GetTileDirection(xx, yy, BOTTOM_LEFT));
+	//RecalcNeighbours(GetTileDirection(xx, yy, BOTTOM_RIGHT));
+	RecalcRegion(xx, yy, 2, 2); 
 	
 	return noone;
 }

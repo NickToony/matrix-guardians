@@ -22,3 +22,4 @@ else
     }
 
 surface_resize(application_surface, view_wview[0], view_hview[0]);
+//display_set_gui_size(room_width, room_height);

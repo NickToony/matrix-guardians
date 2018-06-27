@@ -19,4 +19,4 @@ else
 if (argument4) window_center();
 
 surface_resize(application_surface, min(window_get_width(), argument0), min(window_get_height(), argument1));
-display_set_gui_size(-1, -1);
+//display_set_gui_size(argument0, argument1);

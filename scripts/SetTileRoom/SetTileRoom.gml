@@ -1,7 +1,7 @@
 var xx = argument0;
 var yy = argument1;
 var type = argument2;
-var spr = argument3;
+var spr = GetSpriteForRoom(type);
 
 
 var tile = GetTile(xx, yy);

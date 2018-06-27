@@ -2,6 +2,7 @@
 /// @param yFrom
 /// @param targetX
 /// @param targetY
+/// @param allowSolidTarget
 
 var startX = argument0;
 var startY = argument1;

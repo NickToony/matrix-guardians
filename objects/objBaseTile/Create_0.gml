@@ -20,3 +20,4 @@ roomType = ROOM.NONE;
 roomSprite = noone;
 buildable = false;
 taskBuild = false;
+isVisible = false;

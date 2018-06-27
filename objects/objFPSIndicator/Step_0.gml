@@ -1,0 +1,1 @@
+text = string(fps) + " / " + string(room_speed);

@@ -1,4 +1,8 @@
-alarm[0] = 10;
+if (state == STATE.TASK) {
+	alarm[0] = 10;
+} else {
+	alarm[0] = room_speed;	
+}
 
 if (gateway) return;
 
@@ -39,6 +43,30 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 		}
 		ds_priority_destroy(priority);
 	}
+	
+// Check for dropoff tasks
+if (task == TASK.IDLE && metals > 0 && !ds_list_empty(global.ROOMS[ROOM.STORAGE])) {
+	var priority = ds_priority_create();
+	
+	for (var i = 0; i < ds_list_size(global.ROOMS[ROOM.STORAGE]); i ++) {
+		var pos = ds_list_find_value(global.ROOMS[ROOM.STORAGE], i);
+		ds_priority_add(priority, pos, point_distance(currentX, currentY, pos[0], pos[1]) + irandom(10));
+	}
+		
+	var done = false;
+	while (!done && !ds_priority_empty(priority)) {
+		var pos =  ds_priority_delete_min(priority);
+		taskX = pos[0];
+		taskY = pos[1];
+		path = APathFind(currentX, currentY, taskX, taskY, false);
+		if (path != noone) {
+			task = TASK.DROP;
+			state = STATE.MOVING;
+			break;
+		}
+	}
+	ds_priority_destroy(priority);
+}
 	
 	event_user(0);
 	

@@ -118,6 +118,32 @@ if (state == STATE.IDLE) {
 			} else { taskProgress += max(1, chargeSpeed * ds_list_size(global.ROOMS[ROOM.CHARGING])); }
 		break;
 		
+		case TASK.PICKUP:
+			// if it needs moving to storage
+			if (instance_exists(taskObj)) {
+				if (!taskObj.stored) {
+					metals += taskObj.metals;
+					with (taskObj) instance_destroy();	
+				} else if (taskObj.metals > MAX_METALS) {
+					// It's too big!
+					var diff = abs(taskObj.metals - MAX_METALS);
+					metals += diff;
+					taskObj.metals -= diff;
+					taskObj.bot = noone;
+					taskObj.stored = true;
+				}
+			}
+			task = TASK.IDLE;
+			state = STATE.IDLE;	
+		break;
+		
+		case TASK.DROP:
+			CreateMetals(taskX, taskY, metals);
+		
+			metals = 0;
+			task = TASK.IDLE;
+			state = STATE.IDLE;	
+		break;
 		
 		default:
 		show_debug_message("FAIL TASK");

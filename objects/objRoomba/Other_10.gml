@@ -1,6 +1,7 @@
 var currentX = UnworldX(x, y);
 var currentY = UnworldY(x, y);
 	
+	
 // Check for dig tasks
 if (task == TASK.IDLE && !ds_list_empty(objMap.digTasks)) {
 		
@@ -84,6 +85,36 @@ if (task == TASK.IDLE && !ds_list_empty(objMap.floorTasks)) {
 	}
 	ds_priority_destroy(priority);
 }
+
+// Check for pickup tasks
+if (task == TASK.IDLE && !ds_list_empty(global.ROOMS[ROOM.STORAGE])) {
+	var priority = ds_priority_create();
+	
+	with (objMetals) {
+		if ((!stored || metals > MAX_METALS) && bot == noone) {
+			ds_priority_add(priority, id, point_distance(currentX, currentY, gridX, gridY));
+		}
+	}
+	
+	if (global.METALS <= ds_list_size(global.ROOMS[ROOM.STORAGE]) * MAX_METALS) {
+		var done = false;
+		while (!done && !ds_priority_empty(priority)) {
+			var obj = ds_priority_delete_min(priority);
+			taskX = obj.gridX;
+			taskY = obj.gridY;
+			taskObj = obj;
+			path = APathFind(currentX, currentY, taskX, taskY, false);
+			if (path != noone) {
+				task = TASK.PICKUP;
+				state = STATE.MOVING;
+				obj.bot = id;
+				break;
+			}
+		}
+	}
+	ds_priority_destroy(priority);
+}
+	
 	
 // Check for wall tasks
 if (task == TASK.IDLE && !ds_list_empty(objMap.wallTasks)) {
@@ -125,4 +156,3 @@ if (task == TASK.IDLE && !ds_list_empty(objMap.wallTasks)) {
 	}
 	ds_priority_destroy(priority);
 }
-	

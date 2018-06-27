@@ -66,10 +66,23 @@ SetTileRegion(mapWidth/2, mapHeight/2, objFloorTile, 2, 2);
 // Base
 var xx = GetNeighbourX(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);
 var yy = GetNeighbourY(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);
-CreateBuilding(GetNeighbourX(xx, yy, BOTTOM_LEFT), GetNeighbourY(xx, yy, BOTTOM_LEFT), objGateway);
+var mx = GetNeighbourX(xx, yy, BOTTOM_LEFT);
+var my = GetNeighbourY(xx, yy, BOTTOM_LEFT);
+CreateBuilding(mx, my, objGateway);
 
 // Base units
-repeat (6)
+repeat (5) {
 	CreateUnitGateway(objRoomba);
+}
+	
+xx = GetNeighbourX(mx, my, BOTTOM_LEFT);
+yy = GetNeighbourY(mx, my, BOTTOM_LEFT);
+CreateMetals(xx, yy, 300);
+mx = GetNeighbourX(xx, yy, BOTTOM_RIGHT);
+my = GetNeighbourY(xx, yy, BOTTOM_RIGHT);
+CreateMetals(mx, my, 300);
+xx = GetNeighbourX(mx, my, TOP_RIGHT);
+yy = GetNeighbourY(mx, my, TOP_RIGHT);
+CreateMetals(xx, yy, 300);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);
