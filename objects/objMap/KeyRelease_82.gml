@@ -1,1 +1,0 @@
-CreateUnitGateway(objRoomba);

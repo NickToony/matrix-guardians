@@ -7,4 +7,4 @@ event_inherited();
 tool = TOOL.STORAGE;
 text = "STORAGE";
 icon = sprStorage;
-tooltip = "A room to store all that precious metal!";
+tooltip = "A room to store all that precious metal! Only stored metal can be spent.";

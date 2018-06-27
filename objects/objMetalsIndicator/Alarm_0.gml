@@ -18,6 +18,6 @@ global.SPENDABLE_METALS = min(global.STORED_METALS, mx);
 text = "Stored: " + string(global.SPENDABLE_METALS)
 	+ "\nMax: " + string(mx);
 	
-if (global.STORED_METALS >= mx && mx != 0) {
+if (global.STORED_METALS >= mx && mx > 900) {
 	TutorialTrigger("ERROR: INSUFFICIENT STORAGE! YOU NEED TO BUILD MORE STORAGE ROOMS TO HOLD AND SPEND MORE METAL.", TUTORIAL.LOW_STORAGE);
 }

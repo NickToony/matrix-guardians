@@ -1027,6 +1027,25 @@
             }
         },
         {
+            "Key": "55dbbefc-0f71-43e3-89c2-9db002c2f291",
+            "Value": {
+                "id": "94b78613-1211-44bb-971f-6ac072ccde6c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objMultiButtonAbilities\/objMultiButtonAbilities.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "566b7628-d74f-4135-a046-27c1a540135a",
             "Value": {
                 "id": "ae5878e6-0322-45d2-b752-df45462d5633",
@@ -2661,6 +2680,25 @@
             }
         },
         {
+            "Key": "dd28b5cc-dc23-403c-92de-50448c0d914d",
+            "Value": {
+                "id": "71b6dcee-51be-48d8-9764-951d0438354a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/SpendMetals\/SpendMetals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dda25129-d265-4d7f-8ca6-09d6170861a0",
             "Value": {
                 "id": "c686f146-ed91-42b6-984e-9f52462b2183",
@@ -2752,6 +2790,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/objDraw\/objDraw.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e6893eff-3789-4032-a841-184541c6307d",
+            "Value": {
+                "id": "ac00cf7a-4bdf-4298-afa5-b7a02b7644c3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objButtonRoomba\/objButtonRoomba.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3035,7 +3092,8 @@
         "95fb3f98-9e52-45b9-b9f6-675537e910f5",
         "9d9e32e4-6779-49bb-8d0c-2367cea65721",
         "0499a60c-bcfa-4763-abd0-310dbb1aba30",
-        "38a77372-e12a-46a2-b370-c258d086720b"
+        "38a77372-e12a-46a2-b370-c258d086720b",
+        "dd28b5cc-dc23-403c-92de-50448c0d914d"
     ],
     "tutorial": ""
 }

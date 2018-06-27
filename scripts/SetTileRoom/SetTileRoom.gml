@@ -30,4 +30,9 @@ RecalcNeighbours(tile.topRight);
 RecalcNeighbours(tile.bottomLeft);
 RecalcNeighbours(tile.bottomRight);
 
+with (objMetals) {
+	stored = true;
+	alarm[0] = 1;
+}
+
 return true;

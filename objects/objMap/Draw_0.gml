@@ -19,7 +19,15 @@ if (selecting) {
 	}
 } else {
 	
+	var valid = true;
 	switch (tool) {
+		case TOOL.SPAWN:
+			var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+			valid = false;
+			if (tile != noone && !tile.solid && tile.connected) {
+				valid = true;
+			}
+			// continue
 		case TOOL.DIG:
 		case TOOL.STORAGE:
 		case TOOL.CHARGE:
@@ -30,7 +38,7 @@ if (selecting) {
 			var cost = GetToolCost(tool, noone);
 			var xx = WorldX(objCamera.mouseTileX, objCamera.mouseTileY);
 			var yy = WorldY(objCamera.mouseTileX, objCamera.mouseTileY);
-			draw_sprite_ext(sprBlock, 0, xx, yy, 1, 1, 0, cost <= global.STORED_METALS ? c_green : c_red, 0.3);
+			draw_sprite_ext(sprBlock, 0, xx, yy, 1, 1, 0, (cost <= global.STORED_METALS && valid) ? c_green : c_red, 0.3);
 			
 			if (cost > 0) {
 				draw_set_font(fntFloating);

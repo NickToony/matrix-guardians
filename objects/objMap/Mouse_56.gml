@@ -1,95 +1,108 @@
-if (!selecting) { return; };
+if (selecting) {
+	selecting = false;
 
-selecting = false;
-
-// update selection
-RecalcSelection();
-toolCost = GetToolCost(tool, selection);
-if (toolCost > global.SPENDABLE_METALS) {
-	selectionValid = false;
-}
-if (selection != noone && selectionValid) {
-	var arr = RegionToArray(selection);
+	// update selection
+	RecalcSelection();
+	toolCost = GetToolCost(tool, selection);
+	if (toolCost > global.SPENDABLE_METALS) {
+		selectionValid = false;
+	}	
 	
-	switch (tool) {
-		case TOOL.DIG:
-			for (var i = 0; i < array_length_1d(arr); i ++) {
-				var tile = arr[i];
-				var tileX = tile[0];
-				var tileY = tile[1];
+	if (selection != noone && selectionValid) {
+		var arr = RegionToArray(selection);
 	
-				AddDigTask(tileX, tileY);
-			}
-			PlayUISound(sndPlaceRoom);	
-			break;
-			
-		case TOOL.STORAGE:
-		case TOOL.CHARGE:
-			for (var i = 0; i < array_length_1d(arr); i ++) {
-				var tile = arr[i];
-				var tileX = tile[0];
-				var tileY = tile[1];
+		switch (tool) {
+			case TOOL.DIG:
+				for (var i = 0; i < array_length_1d(arr); i ++) {
+					var tile = arr[i];
+					var tileX = tile[0];
+					var tileY = tile[1];
 	
-				switch (tool) {
-					case TOOL.STORAGE:
-					SetTileRoom(tileX, tileY, ROOM.STORAGE);
-					break;
-					
-					case TOOL.CHARGE:
-					SetTileRoom(tileX, tileY, ROOM.CHARGING);
-					break;
+					AddDigTask(tileX, tileY);
 				}
+				PlayUISound(sndPlaceRoom);	
+				break;
+			
+			case TOOL.STORAGE:
+			case TOOL.CHARGE:
+				for (var i = 0; i < array_length_1d(arr); i ++) {
+					var tile = arr[i];
+					var tileX = tile[0];
+					var tileY = tile[1];
+	
+					switch (tool) {
+						case TOOL.STORAGE:
+						SetTileRoom(tileX, tileY, ROOM.STORAGE);
+						break;
+					
+						case TOOL.CHARGE:
+						SetTileRoom(tileX, tileY, ROOM.CHARGING);
+						break;
+					}
 				
-			}
-			PlayUISound(sndPlaceRoom);	
-			break;
+				}
+				PlayUISound(sndPlaceRoom);	
+				break;
 			
-		case TOOL.REMOVE:
-			for (var i = 0; i < array_length_1d(arr); i ++) {
-				var tile = arr[i];
-				var tileX = tile[0];
-				var tileY = tile[1];
+			case TOOL.REMOVE:
+				for (var i = 0; i < array_length_1d(arr); i ++) {
+					var tile = arr[i];
+					var tileX = tile[0];
+					var tileY = tile[1];
 	
-				SetTileRoom(tileX, tileY, ROOM.NONE);
-			}
-			PlayUISound(sndFailed);	
-			break;
+					SetTileRoom(tileX, tileY, ROOM.NONE);
+				}
+				PlayUISound(sndFailed);	
+				break;
 			
-		case TOOL.BUILD:
-			for (var i = 0; i < array_length_1d(arr); i ++) {
-				var tile = arr[i];
-				var tileX = tile[0];
-				var tileY = tile[1];
+			case TOOL.BUILD:
+				for (var i = 0; i < array_length_1d(arr); i ++) {
+					var tile = arr[i];
+					var tileX = tile[0];
+					var tileY = tile[1];
 	
-				AddBuildTask(tileX, tileY);
-			}
-			PlayUISound(sndPlaceRoom);	
-			break;
+					AddBuildTask(tileX, tileY);
+				}
+				PlayUISound(sndPlaceRoom);	
+				break;
 			
-		case TOOL.CANCEL: 
-			for (var i = 0; i < array_length_1d(arr); i ++) {
-				var tile = arr[i];
-				var tileX = tile[0];
-				var tileY = tile[1];
+			case TOOL.CANCEL: 
+				for (var i = 0; i < array_length_1d(arr); i ++) {
+					var tile = arr[i];
+					var tileX = tile[0];
+					var tileY = tile[1];
 	
-				CancelTasks(tileX, tileY);
-			}
-			PlayUISound(sndFailed);	
-			break;
+					CancelTasks(tileX, tileY);
+				}
+				PlayUISound(sndFailed);	
+				break;
+		}
+	
+		SpendMetals(toolCost);
+	
+	} 
+} else {
+	var valid = true;
+	toolCost = GetToolCost(tool, noone);
+	if (toolCost > global.SPENDABLE_METALS) {
+		valid = false;
 	}
 	
-	var cost = toolCost;
-	global.STORED_METALS -= cost;
-	global.METALS -= cost;
-	global.SPENDABLE_METALS -= cost;
-	with (objMetals) {
-		if (stored && metals > 0 && cost > 0) {
-			var diff = min(metals, cost);
-			metals -= diff;
-			cost -= diff;
+	if (valid) {
+		switch (tool) {
+			case TOOL.SPAWN:
+				var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+				if (tile != noone && !tile.solid && tile.connected) {
+					SpendMetals(toolCost);	
+					CreateUnit(tile.gridX, tile.gridY, objRoomba);
+				}
+			break;
+		
+			default:
+			if (tool != TOOL.NONE) {
+				PlayUISound(sndFailed);
+			}
+			break;
 		}
 	}
-	
-} else {
-	PlayUISound(sndFailed);	
 }

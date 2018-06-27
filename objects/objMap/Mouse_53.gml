@@ -12,5 +12,9 @@ switch (tool) {
 		mx = objCamera.mouseTileX;
 		my = objCamera.mouseTileY;
 		break;
+		
+	default:
+		selection = noone;
+		break;
 
 }

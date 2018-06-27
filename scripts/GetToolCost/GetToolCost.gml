@@ -11,6 +11,10 @@ switch (tool) {
 	case TOOL.STORAGE:
 		cost = 0;
 		break;
+		
+	case TOOL.SPAWN:
+		cost = 300;
+		break;
 	
 	default:
 		cost = 0;
