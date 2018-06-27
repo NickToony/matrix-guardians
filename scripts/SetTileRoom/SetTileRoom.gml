@@ -21,8 +21,13 @@ if (tile.roomType != noone) {
 
 tile.roomType = type;
 tile.roomSprite = spr;
-tile.row.redraw = true;
 
 ds_list_add(global.ROOMS[type], [xx, yy]);
+
+RecalcNeighbours(tile); 
+RecalcNeighbours(tile.topLeft);
+RecalcNeighbours(tile.topRight);
+RecalcNeighbours(tile.bottomLeft);
+RecalcNeighbours(tile.bottomRight);
 
 return true;

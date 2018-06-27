@@ -1,9 +1,9 @@
 switch (argument0) {		
 	case ROOM.CHARGING:
-		return sprWall;
+		return sprWallCharging;
 	
 	case ROOM.STORAGE:
-		return sprWall;
+		return sprWallStorage;
 		
 	default: return sprWall;
 }

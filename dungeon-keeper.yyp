@@ -134,6 +134,25 @@
             }
         },
         {
+            "Key": "09eabd5c-1e9b-43dd-a516-6850a2373573",
+            "Value": {
+                "id": "4b521f16-7d34-472a-addc-08d0fd950c02",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprWallCharging\/sprWallCharging.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1086ebaa-2d2e-4b47-8304-60f981c06b48",
             "Value": {
                 "id": "8864986d-4a61-40b0-9800-c843c112b3df",
@@ -568,25 +587,6 @@
                 ],
                 "resourcePath": "scripts\/CreateMetals\/CreateMetals.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "313639cf-095a-4d8e-857d-dd84ee992b40",
-            "Value": {
-                "id": "471ff19a-d8d6-4ff6-a5df-2daebce82ff4",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "sprites\/sprFloorChargingBattery\/sprFloorChargingBattery.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1502,6 +1502,25 @@
             }
         },
         {
+            "Key": "89a33fc1-7135-40d0-bf9d-81479aa02bf8",
+            "Value": {
+                "id": "ed602e10-52e7-471d-a017-c40de6953491",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprFloorChargingBattery\/sprFloorChargingBattery.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8ae7134f-f0aa-486b-bbe9-d72d063ccdf6",
             "Value": {
                 "id": "ee1bbbf2-504c-4442-ac7e-2365c5385b23",
@@ -1955,6 +1974,25 @@
                 ],
                 "resourcePath": "views\/a07cd87c-19cf-432d-9eb6-5c1c3e1fd647.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a56a5e45-93fd-402a-8729-66ff3378c702",
+            "Value": {
+                "id": "6bf06abe-bb56-4ddd-bc49-1700a116ec0e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprWallStorage\/sprWallStorage.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
