@@ -11,8 +11,9 @@ with (objUnit) {
 	global.METALS += metals;	
 }
 
-draw_self();
-
 var mx = ds_list_size(global.ROOMS[ROOM.STORAGE]) * MAX_METALS;
-text = "Stored: " + string(min(global.STORED_METALS, mx))
+global.SPENDABLE_METALS = min(global.STORED_METALS, mx);
+
+
+text = "Stored: " + string(global.SPENDABLE_METALS)
 	+ "\nMax: " + string(mx);

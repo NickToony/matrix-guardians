@@ -8,3 +8,4 @@ title = "Metals";
 alarm[0] = room_speed;
 global.METALS = 0;
 global.STORED_METALS = 0;
+global.SPENDABLE_METALS = 0;

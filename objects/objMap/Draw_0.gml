@@ -2,7 +2,7 @@ if (selecting) {
 	if (selectionRefresh <= 0) {
 		RecalcSelection();
 		toolCost = GetToolCost(tool, selection);
-		if (toolCost > global.STORED_METALS) {
+		if (toolCost > global.SPENDABLE_METALS) {
 			selectionValid = false;
 		}
 		selectionRefresh = SELECTION_RATE;

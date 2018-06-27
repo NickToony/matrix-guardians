@@ -19,5 +19,5 @@ switch (tool) {
 if (region == noone) {
 	return cost;
 } else {
-	return (array_length_1d(RegionToArray(region))+1) * cost;	
+	return (array_length_1d(RegionToArray(region))) * cost;	
 }
