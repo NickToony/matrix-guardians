@@ -5,7 +5,7 @@ if (!currentTile.walls) return;
 for (var dir = 0; dir < array_length_1d(currentTile.walled); dir++) {
 	var wall = currentTile.walled[dir];
 	if (wall == noone) {
-		wall = sprWall;	
+		wall = sprWallDefault;	
 	}
 	
 	var tile;

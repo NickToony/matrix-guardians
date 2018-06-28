@@ -55,6 +55,11 @@ if (overclocked) {
 if (state == STATE.IDLE) {
 	 
 }else if (state == STATE.MOVING) || (state == STATE.ASSAULT) {
+	if (path == noone) {
+		state = STATE.IDLE;
+		return;
+	}
+	
 	var node = ds_stack_top(path);
 	var tx = node[0];
 	var ty = node[1];

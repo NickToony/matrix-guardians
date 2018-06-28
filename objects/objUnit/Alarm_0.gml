@@ -13,10 +13,10 @@ var currentY = gridY;
 
 if (damage > 0 && targetObject != noone && state != STATE.ATTACK) {
 	var closest = instance_nearest(x, y, targetObject);
-	if (closest && point_distance(x, y, closest.x, closest.y) < 400) {
+	if (closest && point_distance(x, y, closest.x, closest.y) < 600) {
 		var temp = APathFind(currentX, currentY, UnworldX(closest.x, closest.y), UnworldY(closest.x, closest.y), false);
 		if (temp != noone) {
-			if (ds_stack_size(temp) < 8) {
+			if (ds_stack_size(temp) < 15) {
 				if (path != noone) {
 					APathDestroy(path);	
 				}

@@ -5,5 +5,11 @@ switch (argument0) {
 	case ROOM.STORAGE:
 		return sprWallStorage;
 		
-	default: return sprWall;
+	case ROOM.ASSEMBLY:
+		return sprWallAssembly;
+		
+	case ROOM.ARCHIVE:
+		return sprWallArchive;
+		
+	default: return sprWallDefault;
 }
