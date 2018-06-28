@@ -419,25 +419,6 @@
             }
         },
         {
-            "Key": "1fea5920-9972-4a5f-a86f-177b19eaad78",
-            "Value": {
-                "id": "287a72c3-6454-426a-bc9b-6893c2eea00a",
-                "modelName": "GMResourceInfo",
-                "mvc": "1.0",
-                "configDeltaFiles": [
-                    
-                ],
-                "configDeltas": [
-                    
-                ],
-                "resourceCreationConfigs": [
-                    "default"
-                ],
-                "resourcePath": "objects\/objFightingUnit\/objFightingUnit.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "201f7879-c889-4373-8a7e-751c220c09e0",
             "Value": {
                 "id": "c1b5d045-c081-4630-b9da-07c4d7639a50",
@@ -1917,6 +1898,25 @@
                 ],
                 "resourcePath": "scripts\/CreateUnitGateway\/CreateUnitGateway.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8d5335b9-4b6d-4f6d-b849-62316587966d",
+            "Value": {
+                "id": "9f34822d-2c49-4402-89c4-f6a8df2048c6",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objFriendlyUnit\/objFriendlyUnit.yy",
+                "resourceType": "GMObject"
             }
         },
         {

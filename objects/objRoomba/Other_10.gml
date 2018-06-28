@@ -1,6 +1,8 @@
-var currentX = UnworldX(x, y);
-var currentY = UnworldY(x, y);
-	
+
+event_inherited();
+
+var currentX = gridX;
+var currentY = gridY;
 
 for (var ti = 0; ti < ds_list_size(myTasks); ti ++) {
 	var taskId = ds_list_find_value(myTasks, ti);

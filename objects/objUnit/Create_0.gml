@@ -25,7 +25,6 @@ damage = 1;
 path = noone;
 //pathIndex = 0;
 alarm[0] = room_speed;
-alarm[1] = room_speed;
 state = STATE.IDLE;
 task = TASK.IDLE;
 taskX = noone;
