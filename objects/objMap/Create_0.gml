@@ -6,6 +6,8 @@
 #macro SELECTION_RATE 5
 #macro SELECTION_RANGE 16
 
+#macro WAVE_MAX_TIME room_speed * 240
+
 enum TOOL {
 	NONE,
 	DIG,
@@ -93,3 +95,5 @@ yy = GetNeighbourY(mx, my, TOP_RIGHT);
 CreateMetals(xx, yy, 300);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);
+
+alarm[0] = WAVE_MAX_TIME;

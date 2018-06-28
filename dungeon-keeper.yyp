@@ -153,6 +153,25 @@
             }
         },
         {
+            "Key": "084a35d5-da01-444c-a6d1-dfed6358dac3",
+            "Value": {
+                "id": "697b4168-e32a-42c2-9fa9-e25d24e13c36",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/MoveCameraWorld\/MoveCameraWorld.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "099b1a2d-7f0c-41d0-ba6e-ac49d8e312f1",
             "Value": {
                 "id": "295344f8-a50b-4812-8bb3-91bc7d46ea33",
@@ -1005,6 +1024,25 @@
                 ],
                 "resourcePath": "rooms\/rmGame\/rmGame.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "4853cfd3-8466-421f-8a01-856af01f4669",
+            "Value": {
+                "id": "5b5d8d21-7a3b-4834-80ad-f529cbc9fed9",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/TriggerEnemyWave\/TriggerEnemyWave.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3273,6 +3311,7 @@
         "07e6ef6e-74f4-49f6-883e-9d2a7e3380c6",
         "70ec2748-465e-4ea1-8751-6140e1a107da",
         "9c8dc584-8563-4e1f-86a9-39c5dfa1245f",
+        "084a35d5-da01-444c-a6d1-dfed6358dac3",
         "16837e29-2c78-4761-8349-18f2a101f1c6",
         "9568b794-3d18-45f4-aca5-60431d94136c",
         "30f49731-25fe-46f0-9315-f8f2e7d7d738",
@@ -3283,7 +3322,8 @@
         "9d9e32e4-6779-49bb-8d0c-2367cea65721",
         "0499a60c-bcfa-4763-abd0-310dbb1aba30",
         "38a77372-e12a-46a2-b370-c258d086720b",
-        "dd28b5cc-dc23-403c-92de-50448c0d914d"
+        "dd28b5cc-dc23-403c-92de-50448c0d914d",
+        "4853cfd3-8466-421f-8a01-856af01f4669"
     ],
     "tutorial": ""
 }

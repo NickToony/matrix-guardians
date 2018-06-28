@@ -9,6 +9,8 @@ if (selection == noone) {
 switch (tool) {
 	case TOOL.STORAGE:
 	case TOOL.CHARGE:
+	case TOOL.ARCHIVE:
+	case TOOL.ASSEMBLY:
 		selectionValid = true;
 		var arr = RegionToArray(selection);
 		for (var i = 0; i < array_length_1d(arr); i ++) {
