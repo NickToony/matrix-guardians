@@ -37,7 +37,6 @@ gateway = false;
 target = noone;
 
 moveSpeed = 6;
-crawlSpeed = 3;
 taskTime = 0;
 image_speed = 0;
 
@@ -51,3 +50,4 @@ gridX = 0;
 gridY = 0;
 targetObject = noone;
 depthOffset = 0;
+updatePos = 0;

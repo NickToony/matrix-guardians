@@ -16,3 +16,4 @@ ds_list_shuffle(myTasks);
 damage = 0;
 maxHealth = 50;
 myHealth = 50;
+moveSpeed = 5;

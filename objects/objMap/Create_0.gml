@@ -6,6 +6,11 @@
 #macro SELECTION_RATE 5
 #macro SELECTION_RANGE 16
 
+global.WIN_CONNECT_X = -1;
+global.WIN_CONNECT_Y = -1;
+global.BEGIN_WIN = false;
+global.FINISHED = false;
+
 enum TOOL {
 	NONE,
 	DIG,
@@ -96,4 +101,5 @@ CreateMetals(xx, yy, 300);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);
 
-alarm[0] = global.WAVE_TIME + (room_speed * 60); // extra minute to prepare
+waveCountdown = global.WAVE_TIME + (room_speed * 60); // extra minute to prepare
+alarm[0] = room_speed * 60;

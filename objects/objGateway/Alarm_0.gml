@@ -1,5 +1,7 @@
 alarm[0] = 60;
 
+if (global.PAUSED) exit;
+
 if (!ds_stack_empty(spawnQueue)) {
 	var unit = ds_stack_pop(spawnQueue);
 	var x1 = GetNeighbourX(gridX, gridY, TOP_LEFT);

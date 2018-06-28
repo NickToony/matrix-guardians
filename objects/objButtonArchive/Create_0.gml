@@ -7,4 +7,4 @@ event_inherited();
 tool = TOOL.ARCHIVE;
 text = "ARCHIVE";
 icon = sprStorage;
-tooltip = "The archive maintain and order the data matrixes guiding all your robots. This room will attract Drone Keepers who actively accumulate more data, but also have a mean ranged attack!";
+tooltip = "The archive is for maintaining and organising the data matrixes that guide all your robots. This room will attract Drone Keepers who actively accumulate more data. They move quickly and have a nasty bite!";

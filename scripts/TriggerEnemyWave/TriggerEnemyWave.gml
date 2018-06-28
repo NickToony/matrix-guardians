@@ -8,6 +8,12 @@ var count = 1;
 if (global.DIFFICULTY > 4) {
 	count = 2;
 }
+if (global.BEGIN_WIN) {
+	count = 4;
+	global.ASSAULT_MAX = 10;
+	global.DIFFICULTY = 10;
+	global.FREQUENCY /= 2;
+}
 
 
 
@@ -37,8 +43,11 @@ repeat (count) {
 }
 
 if (added) {
+	if (!global.BEGIN_WIN) {
+		ShowMessage("ALERT! ALERT! HUMANS HAVE BEEN ENCOUNTERED! STOP THEM!");
+	}
 	MoveCameraWorld(tile.gridX, tile.gridY, false);
-	ShowMessage("ALERT! ALERT! HUMANS HAVE BEEN ENCOUNTERED! STOP THEM!");
+	
 	objMap.tool = TOOL.NONE;
 	global.DIFFICULTY += global.DIFFICULTY_INCREMENT;
 }

@@ -1,1 +1,1 @@
-text = string(ceil(objMap.alarm[0] / room_speed)) + " seconds";
+text = string(ceil(objMap.waveCountdown / room_speed)) + " seconds";

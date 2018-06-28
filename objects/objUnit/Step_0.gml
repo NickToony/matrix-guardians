@@ -1,5 +1,12 @@
-gridX = UnworldX(x, y);
-gridY = UnworldY(x, y);
+if (global.PAUSED) exit;
+
+if (updatePos <= 0) {
+	gridX = UnworldX(x, y);
+	gridY = UnworldY(x, y);
+	updatePos = 10;
+} else {
+	updatePos -= 1;
+}
 
 if (myHealth <= 0) {
 	instance_destroy();	
@@ -51,6 +58,9 @@ if (overclocked) {
 	multiplier = 2;
 	energy = totalEnergy;
 }
+if (energy <= 0) {
+	multiplier = 0.5;	
+}
 
 if (state == STATE.IDLE) {
 	 
@@ -63,7 +73,7 @@ if (state == STATE.IDLE) {
 	var node = ds_stack_top(path);
 	var tx = node[0];
 	var ty = node[1];
-	var currentSpeed = (energy <= 0) ? crawlSpeed : moveSpeed * multiplier;
+	var currentSpeed = moveSpeed * multiplier;
 	tx = WorldX(tx, ty);
 	ty = WorldY(tx, ty);
 	

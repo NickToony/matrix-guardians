@@ -1,6 +1,8 @@
 // FPS
 room_speed = 60;
-display_reset(0, true)
+display_reset(0, true);
+
+global.PAUSED = false;
 
 layerInstances = layer_get_id("Instances");
 layerDepth = layer_get_id("Depth");

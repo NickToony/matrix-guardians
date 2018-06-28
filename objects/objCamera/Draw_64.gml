@@ -4,6 +4,8 @@ if (message == noone && ds_queue_size(messages)) {
 
 if (message != noone) {
 	
+	global.PAUSED = true;
+	
 	messageActive = true;
 	
 	draw_set_valign(fa_center);

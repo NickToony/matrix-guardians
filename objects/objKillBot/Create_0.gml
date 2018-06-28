@@ -10,3 +10,6 @@ damage = 2;
 maxHealth = 200;
 myHealth = 200;
 depthOffset = 14;
+totalEnergy = 200;
+energy = totalEnergy;
+moveSpeed = 3;

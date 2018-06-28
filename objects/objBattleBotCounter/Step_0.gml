@@ -1,0 +1,1 @@
+text = string(instance_number(objKillBot) +instance_number(objDrone) );

@@ -27,3 +27,9 @@ if (argument0.bottomRight != noone) argument0.isVisible = max(argument0.isVisibl
 	
 
 argument0.row.redraw = true;
+
+if (argument0.gridX == global.WIN_CONNECT_X && argument0.gridY == global.WIN_CONNECT_Y && argument0.connected && !global.BEGIN_WIN) {
+	global.BEGIN_WIN = true;
+	ShowMessage("THE GATEWAY IS ACTIVE! WE CAN PROCEED! PREPARE FOR HUMAN COUNTER-ASSAULT...");
+	TriggerEnemyWave();
+}
