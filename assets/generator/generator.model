@@ -1,0 +1,21 @@
+# Made using Asset Forge (1.3)
+
+:models
+Primitives/block_rounded[(0, 0.5, 0);(0.0, 180.0, 0.0);(0.6, 0.8, 0.6);block_rounded_73;_defaultMat]
+Primitives/cylinder_cone[(0, 0.6, 0);(0.0, 180.0, 180.0);(0.6, 0.6, 0.6);cylinder_cone_74;darkStone]
+Aircraft/gear_strut%[(0, 0, 0);(0.0, 180.0, 0.0);(0.6, 1.1, 0.7);gear_strut%_75;stone]
+City/detail_airHuge[(0, 1.1, 0);(0.0, 180.0, 0.0);(0.4, 0.8, 0.4);detail_airHuge_76;lightStone+stone+darkStone]
+City/detail_airSmall[(-0.2, 1, 0);(0.0, 0.0, 90.0);(1.0, 0.7, 1.0);detail_airSmall_77;stone+lightStone]
+City/detail_airSmall[(-1.49E-08, 1, -0.2);(0.0, 270.0, 90.0);(1.0, 0.7, 1.0);detail_airSmall_78;stone+lightStone]
+City/detail_airSmall[(0.2, 1, 0);(0.0, 180.0, 90.0);(1.0, 0.7, 1.0);detail_airSmall_79;stone+lightStone]
+City/detail_airSmall[(-1.49E-08, 1, 0.2);(0.0, 90.0, 90.0);(1.0, 0.7, 1.0);detail_airSmall_80;stone+lightStone]
+
+:materials
+_defaultMat[RGBA(1.000, 1.000, 1.000, 1.000);circuit]
+lightStone[RGBA(0.205, 0.204, 0.210, 1.000);stripes]
+stone[RGBA(0.998, 0.204, 0.204, 1.000);metalGalvan]
+darkStone[RGBA(0.834, 0.834, 0.834, 1.000);stripes]
+
+:textures
+
+:extra
