@@ -8,3 +8,4 @@ taskProgress = 0;
 
 moveSpeed = 6;
 image_speed = 0;
+myHealth = 100;

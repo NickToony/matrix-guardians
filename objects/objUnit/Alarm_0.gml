@@ -6,9 +6,27 @@ if (state == STATE.TASK) {
 
 if (gateway) return;
 
+var currentX = gridX;
+var currentY = gridY;
+
+if (damage > 0) {
+	var closest = instance_nearest(x, y, objEnemy);
+	if (closest && point_distance(x, y, closest.x, closest.y) < 200) {
+		var temp = APathFind(currentX, currentY, UnworldX(closest.x, closest.y), UnworldY(closest.x, closest.y), false);
+		if (temp != noone) {
+			if (ds_stack_size(temp) < 5) {
+				state = STATE.ATTACK;
+				path = temp;
+				target = closest;
+			} else {
+				APathDestroy(temp);
+			}
+		}
+	}
+}
+
 if (state == STATE.IDLE && task == TASK.IDLE) {
-	var currentX = UnworldX(x, y);
-	var currentY = UnworldY(x, y);
+	
 	
 	if (energy <= 0) {
 		TutorialTrigger("WARNING! WARNING! A ROBOT IS NOT FUNCTIONING AT PEAK EFFICIENCY! PLACE A CHARGING ROOM NEARBY!", TUTORIAL.LOW_CHARGE);	

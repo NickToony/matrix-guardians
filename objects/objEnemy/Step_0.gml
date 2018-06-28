@@ -1,5 +1,9 @@
 depth = y + 10 + objMap.tileHeight/2;
 
+if (myHealth <= 0) {
+	instance_destroy();	
+}
+
 if (state == STATE.IDLE) {
 	 
 } else if (state == STATE.MOVING) || (state == STATE.ASSAULT) {
@@ -35,27 +39,7 @@ if (state == STATE.IDLE) {
 				taskProgress += 1;	
 			}
 		} else {
-			var angle = point_direction(x, y, tx, ty);
-			x += lengthdir_x(currentSpeed, angle);
-			y += lengthdir_y(currentSpeed, angle);
-			if (x < tx) {
-				if (y > ty) {
-					// top right
-					image_index = 0;
-				} else {
-					// bottom right
-					image_index = 2;
-				}
-			} else {
-				if (y > ty) {
-					// top left
-					image_index = 1;
-				
-				} else {
-					// botom left
-					image_index = 3;
-				}
-			}
+			MoveTowards(tx, ty, currentSpeed);
 		}
 		
 	}

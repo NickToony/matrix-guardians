@@ -1,3 +1,6 @@
+gridX = UnworldX(x, y);
+gridY = UnworldY(x, y);
+
 if (gateway) {
 	depth = 999999;
 	image_index = 3;
@@ -49,28 +52,7 @@ if (state == STATE.IDLE) {
 			}
 		}
 	} else {
-		var angle = point_direction(x, y, tx, ty);
-		x += lengthdir_x(currentSpeed, angle);
-		y += lengthdir_y(currentSpeed, angle);
-		if (x < tx) {
-			if (y > ty) {
-				// top right
-				image_index = 0;
-			} else {
-				// bottom right
-				image_index = 2;
-			}
-		} else {
-			if (y > ty) {
-				// top left
-				image_index = 1;
-				
-			} else {
-				// botom left
-				image_index = 3;
-			}
-		}
-		
+		MoveTowards(tx, ty, currentSpeed);
 	}
 } else if (state == STATE.TASK) {
 	switch (task) {
@@ -119,6 +101,7 @@ if (state == STATE.IDLE) {
 		case TASK.CHARGE:
 			if (taskProgress > taskTime) {
 				energy = totalEnergy;
+				myHealth = maxHealth;
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
 			} else { taskProgress += max(1, chargeSpeed * ds_list_size(global.ROOMS[ROOM.CHARGING])) * multiplier; }
@@ -156,5 +139,40 @@ if (state == STATE.IDLE) {
 		task = TASK.IDLE;
 		state = STATE.IDLE;
 		break;
+	}
+} else if (state == STATE.ATTACK) {
+	if (!instance_exists(target)) {
+		state = STATE.IDLE;
+		return;
+	}
+	
+	if (point_distance(x, y, target.x, target.y) < objMap.tileWidth) {
+		target.myHealth -= damage;
+	} else {
+		if (path == noone) {
+			path = APathFind(gridX, gridY, UnworldX(target.x, target.y), UnworldY(target.x, target.y), false);
+			if (path == noone) {
+				state = STATE.IDLE;	
+			}
+		}
+		
+		// Move along path..
+		var node = ds_stack_top(path);
+		var tx = node[0];
+		var ty = node[1];
+		var currentSpeed = (energy <= 0) ? crawlSpeed : moveSpeed * multiplier;
+		tx = WorldX(tx, ty);
+		ty = WorldY(tx, ty);
+	
+		if (abs(tx - x) <= currentSpeed && abs(ty - y) <= currentSpeed) {
+			ds_stack_pop(path);
+		
+			if (ds_stack_empty(path)) {
+				APathDestroy(path);
+				path = noone;
+			}
+		} else {
+			MoveTowards(tx, ty, currentSpeed);
+		}
 	}
 }

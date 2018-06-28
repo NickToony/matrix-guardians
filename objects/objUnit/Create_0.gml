@@ -5,7 +5,8 @@ enum STATE {
 	IDLE,
 	MOVING,
 	TASK,
-	ASSAULT
+	ASSAULT,
+	ATTACK
 }
 
 enum TASK {
@@ -18,9 +19,12 @@ enum TASK {
 	DROP
 }
 
+myMaxHealth = 100;
+myHealth = myMaxHealth;
+damage = 1;
 path = noone;
 //pathIndex = 0;
-alarm[0] = room_speed
+alarm[0] = room_speed;
 alarm[1] = room_speed;
 state = STATE.IDLE;
 task = TASK.IDLE;
@@ -29,6 +33,7 @@ taskY = noone;
 taskObj = noone;
 taskProgress = 0;
 gateway = false;
+target = noone;
 
 moveSpeed = 6;
 crawlSpeed = 3;
@@ -41,3 +46,5 @@ chargeTime = room_speed*10;
 chargeSpeed = 0.25;
 metals = 0;
 overclocked = 0;
+gridX = 0;
+gridY = 0;
