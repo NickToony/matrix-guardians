@@ -1,5 +1,5 @@
-#macro TILES_PER_KILLBOT 4
-#macro TILES_PER_DRONE 4
+#macro TILES_PER_KILLBOT 6
+#macro TILES_PER_DRONE 8
 
 enum ROOM {
 	NONE,

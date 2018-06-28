@@ -9,30 +9,42 @@ if (gateway) return;
 var currentX = gridX;
 var currentY = gridY;
 
-if (damage > 0 && targetObject != noone) {
+if (damage > 0 && targetObject != noone && state != STATE.ATTACK) {
 	var closest = instance_nearest(x, y, targetObject);
-	if (closest && point_distance(x, y, closest.x, closest.y) < 200) {
+	if (closest) {
 		var temp = APathFind(currentX, currentY, UnworldX(closest.x, closest.y), UnworldY(closest.x, closest.y), false);
 		if (temp != noone) {
-			if (ds_stack_size(temp) < 5) {
+			//if (ds_stack_size(temp) < 8) {
+				if (path != noone) {
+					APathDestroy(path);	
+				}
 				state = STATE.ATTACK;
+				ClearTasks();
 				path = temp;
 				target = closest;
-			} else {
-				APathDestroy(temp);
+			//} else {
+			//	APathDestroy(temp);
+			//}
+		}
+	} else if (state == STATE.IDLE && instance_exists(objBuildingEnemySpawn) && irandom(4) <= 1) {
+		var temp = APathFind(currentX, currentY, UnworldX(objBuildingEnemySpawn.x, objBuildingEnemySpawn.y), UnworldY(objBuildingEnemySpawn.x, objBuildingEnemySpawn.y), false);
+		if (temp != noone) {
+			if (path != noone) {
+				APathDestroy(path);	
 			}
+			state = STATE.MOVING;
+			ClearTasks();
+			path = temp;
 		}
 	}
 }
 
 if (state == STATE.IDLE && task == TASK.IDLE) {
 	
-	
-	
 	event_user(0);
 	
 	// If STILL idle
-	if (task == TASK.IDLE) {
+	if (state == STATE.IDLE && task == TASK.IDLE) {
 		// Find a open spot
 		var okay = false;
 		var cell = noone;

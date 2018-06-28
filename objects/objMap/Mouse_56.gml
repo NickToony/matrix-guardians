@@ -82,7 +82,7 @@ if (selecting) {
 					var tileX = tile[0];
 					var tileY = tile[1];
 	
-					CancelTasks(tileX, tileY);
+					CancelTasks(tileX, tileY, false);
 				}
 				PlayUISound(sndFailed);	
 				break;

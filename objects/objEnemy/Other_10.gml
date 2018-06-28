@@ -4,10 +4,14 @@ with (objEnemy) {
 		assaultCount += 1;	
 	}
 }
-if (assaultCount <= global.ASSAULT_MAX && irandom(10) <= 1) {
-	path = PathFindThroughDirt(gridX, gridY, objGateway.gridX, objGateway.gridY);
-	show_debug_message("ATTEMPT ASSAULT");
-	if (path != noone) {
+if (assaultCount < global.ASSAULT_MAX && irandom(10) <= 1) {
+	var newPath = PathFindThroughDirt(gridX, gridY, objGateway.gridX, objGateway.gridY);
+	if (newPath != noone) {
+		if (path != noone) {
+			APathDestroy(path);
+		}
+			
 		state = STATE.ASSAULT;
+		path = newPath;
 	}
 }

@@ -1,7 +1,11 @@
 var xx = argument0;
 var yy = argument1;
+var allTasks = argument2;
 
 var lists = [objMap.buildTasks, objMap.digTasks];
+if (allTasks) {
+	lists = [objMap.buildTasks, objMap.digTasks, objMap.floorTasks, objMap.wallTasks];
+}
 for (var i = 0; i < array_length_1d(lists); i ++) {
 	var list = lists[i];
 	
@@ -13,6 +17,11 @@ for (var i = 0; i < array_length_1d(lists); i ++) {
 			var tile = GetTile(xx, yy);
 			if (tile != noone) {
 				tile.taskDig = false;
+				tile.taskBuild = false;
+				if (allTasks) {
+					tile.taskFloor = false;
+					tile.taskWall = false;
+				}
 			}
 			RecalcNeighbours(tile);
 		}
@@ -33,6 +42,11 @@ with (objRoomba) {
 			var tile = GetTile(xx, yy);
 			if (tile != noone) {
 				tile.taskDig = false;
+				tile.taskBuild = false;
+				if (allTasks) {
+					tile.taskFloor = false;
+					tile.taskWall = false;
+				}
 			}
 			RecalcNeighbours(tile);
 		}

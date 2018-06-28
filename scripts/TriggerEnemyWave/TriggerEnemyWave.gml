@@ -25,4 +25,5 @@ if (okay) {
 	MoveCameraWorld(tile.gridX, tile.gridY, false);
 	ShowMessage("ALERT! ALERT! HUMANS HAVE BEEN ENCOUNTERED! STOP THEM!");
 	objMap.tool = TOOL.NONE;
+	global.DIFFICULTY += global.DIFFICULTY_INCREMENT;
 }
