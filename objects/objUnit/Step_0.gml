@@ -44,7 +44,7 @@ if (gateway) {
 	return;
 }
 
-depth = y + 10 + objMap.tileHeight/2;
+depth = y + 10 + depthOffset + objMap.tileHeight/2;
 var multiplier = 1;
 if (overclocked) {
 	overclocked -= 1;

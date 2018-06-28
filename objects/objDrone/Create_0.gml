@@ -9,3 +9,4 @@ image_yscale = 1 / 6;
 damage = 3;
 maxHealth = 100;
 myHealth = 100;
+depthOffset = 14;

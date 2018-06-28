@@ -3,8 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
-image_xscale = 1 / 4;
-image_yscale = 1 / 4;
+image_xscale = 1 / 5;
+image_yscale = 1 / 5;
 
 myTasks = ds_list_create();
 ds_list_add(myTasks, TASK.DIG);

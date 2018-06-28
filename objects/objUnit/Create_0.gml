@@ -50,3 +50,4 @@ overclocked = 0;
 gridX = 0;
 gridY = 0;
 targetObject = noone;
+depthOffset = 0;

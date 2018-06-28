@@ -1673,6 +1673,25 @@
             }
         },
         {
+            "Key": "797e32fc-6c5e-43e7-ad4d-61a8d53002ec",
+            "Value": {
+                "id": "2e50a347-90b3-4b0b-8f7e-bc7da0c307d5",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprKillbot\/sprKillbot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7abca5ab-2de0-4304-8b88-fd490a7209e6",
             "Value": {
                 "id": "f7290965-c72c-49f7-83ac-dbdf9fb5a429",
