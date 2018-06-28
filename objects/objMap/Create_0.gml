@@ -82,6 +82,9 @@ CreateBuilding(mx, my, objGateway, true);
 repeat (5) {
 	CreateUnitGateway(objRoomba);
 }
+
+CreateUnitGateway(objDrone);
+CreateUnitGateway(objKillBot);
 	
 xx = GetNeighbourX(mx, my, BOTTOM_LEFT);
 yy = GetNeighbourY(mx, my, BOTTOM_LEFT);

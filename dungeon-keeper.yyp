@@ -2642,6 +2642,25 @@
             }
         },
         {
+            "Key": "c24bd7c0-b12a-489d-a8a0-91f2ce7c7078",
+            "Value": {
+                "id": "b76634fa-6975-4669-9e19-974bba8e4a49",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprDrone\/sprDrone.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c25f722e-1c60-40de-b466-4f93f9cf346d",
             "Value": {
                 "id": "3d9b7d74-94de-4a09-8ce4-1966c0c5c6ed",

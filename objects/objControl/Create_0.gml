@@ -17,6 +17,7 @@ instance_create_layer(0, 0, layerControl, objMap);
 
 // Fix sprites for units
 sprite_set_offset(sprRoomba, sprite_get_xoffset(sprRoomba),sprite_get_yoffset(sprRoomba) + objMap.tileHeight*3);
+sprite_set_offset(sprDrone, sprite_get_xoffset(sprDrone),sprite_get_yoffset(sprDrone) + objMap.tileHeight*8);
 sprite_set_offset(sprMetals, sprite_get_xoffset(sprMetals),sprite_get_yoffset(sprMetals) + objMap.tileHeight*0.5);
 
 global.mouse_over_ui = false;
