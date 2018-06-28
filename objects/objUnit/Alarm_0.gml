@@ -9,8 +9,8 @@ if (gateway) return;
 var currentX = gridX;
 var currentY = gridY;
 
-if (damage > 0) {
-	var closest = instance_nearest(x, y, objEnemy);
+if (damage > 0 && targetObject != noone) {
+	var closest = instance_nearest(x, y, targetObject);
 	if (closest && point_distance(x, y, closest.x, closest.y) < 200) {
 		var temp = APathFind(currentX, currentY, UnworldX(closest.x, closest.y), UnworldY(closest.x, closest.y), false);
 		if (temp != noone) {

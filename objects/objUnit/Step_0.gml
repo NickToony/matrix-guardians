@@ -1,6 +1,10 @@
 gridX = UnworldX(x, y);
 gridY = UnworldY(x, y);
 
+if (myHealth <= 0) {
+	instance_destroy();	
+}
+
 if (gateway) {
 	depth = 999999;
 	image_index = 3;
@@ -30,7 +34,7 @@ if (overclocked) {
 
 if (state == STATE.IDLE) {
 	 
-}else if (state == STATE.MOVING) {
+}else if (state == STATE.MOVING) || (state == STATE.ASSAULT) {
 	var node = ds_stack_top(path);
 	var tx = node[0];
 	var ty = node[1];
@@ -40,19 +44,37 @@ if (state == STATE.IDLE) {
 	
 	if (abs(tx - x) <= currentSpeed && abs(ty - y) <= currentSpeed) {
 		ds_stack_pop(path);
+		taskProgress = 0;
 		
 		if (ds_stack_empty(path)) {
 			APathDestroy(path);
 			path = noone;
-			if (task != TASK.IDLE) {
-				state = STATE.TASK;
-				taskProgress = 0;
+			if (task != TASK.IDLE) { 
+		        state = STATE.TASK; 
+		        taskProgress = 0; 
 			} else {
 				state = STATE.IDLE;	
 			}
 		}
 	} else {
-		MoveTowards(tx, ty, currentSpeed);
+		
+		var tile = GetTile(node[0], node[1]);
+		if (tile == noone) {
+			APathDestroy(path);
+			path = noone;
+			state = STATE.IDLE;	
+		}
+		
+		if (tile.solid && state == STATE.ASSAULT) {
+			if (taskProgress > tile.digTime * 2) {
+				SetTile(tile.gridX, tile.gridY, objDirtFloor);
+			} else {
+				taskProgress += 1;	
+			}
+		} else {
+			MoveTowards(tx, ty, currentSpeed);
+		}
+		
 	}
 } else if (state == STATE.TASK) {
 	switch (task) {
