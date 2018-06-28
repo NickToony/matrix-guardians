@@ -5,6 +5,26 @@ if (myHealth <= 0) {
 	instance_destroy();	
 }
 
+if (pickedup) {
+	x = mouse_x + 64;
+	y = mouse_y;
+	depth = 999999;
+	
+	if (mouse_check_button(mb_right)) {
+		var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+		if (tile != noone && !tile.solid && tile.connected) {
+			x = WorldX(tile.gridX, tile.gridY);
+			y = WorldY(tile.gridX, tile.gridY);
+			pickedup = false;
+			return;
+		} else {
+			PlayUISound(sndFailed);	
+		}
+	}
+	
+	return;	
+}
+
 if (gateway) {
 	depth = 999999;
 	image_index = 3;

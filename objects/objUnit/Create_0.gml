@@ -19,6 +19,8 @@ enum TASK {
 	DROP
 }
 
+pickedup = false;
+
 myMaxHealth = 100;
 myHealth = myMaxHealth;
 damage = 1;

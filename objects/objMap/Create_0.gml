@@ -95,4 +95,4 @@ CreateMetals(xx, yy, 300);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);
 
-alarm[0] = global.WAVE_TIME;
+alarm[0] = global.WAVE_TIME + (room_speed * 60); // extra minute to prepare
