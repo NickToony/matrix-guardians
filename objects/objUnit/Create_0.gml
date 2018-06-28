@@ -51,3 +51,4 @@ gridY = 0;
 targetObject = noone;
 depthOffset = 0;
 updatePos = 0;
+flee = false;

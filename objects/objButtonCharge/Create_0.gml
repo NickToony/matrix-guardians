@@ -7,5 +7,5 @@ event_inherited();
 tool = TOOL.CHARGE;
 text = "CHARGE";
 icon = sprStorage;
-tooltip = "A place for your bots to recharge. The bigger the rooms, the faster they recharge.";
+tooltip = "A place for your bots to recharge and repair. The bigger the rooms, the faster they recharge.";
 

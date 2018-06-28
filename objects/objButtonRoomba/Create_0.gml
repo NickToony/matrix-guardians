@@ -7,4 +7,4 @@ event_inherited();
 tool = TOOL.SPAWN;
 text = "ROOMBA";
 icon = sprBuild;
-tooltip = "Deliver a brand new Roomba to the selected tile.";
+tooltip = "Deliver a brand new little helper to the selected tile.";

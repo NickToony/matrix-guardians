@@ -102,8 +102,10 @@ if (selecting) {
 		switch (tool) {
 			case TOOL.SPAWN:
 				var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
+				valid = false;
 				if (tile != noone && !tile.solid && tile.connected) {
 					CreateUnit(tile.gridX, tile.gridY, objRoomba);
+					valid = true;
 				}
 			break;
 			

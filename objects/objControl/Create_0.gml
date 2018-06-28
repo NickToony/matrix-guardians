@@ -1,6 +1,7 @@
 // FPS
 room_speed = 60;
 display_reset(0, true);
+randomize();
 
 global.PAUSED = false;
 

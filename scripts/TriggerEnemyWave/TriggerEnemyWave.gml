@@ -4,10 +4,7 @@ if (instance_exists(objBuildingEnemySpawn)) {
 	return;
 }
 
-var count = 1;
-if (global.DIFFICULTY > 4) {
-	count = 2;
-}
+var count = max(1, min(3, global.DIFFICULTY / 3));
 if (global.BEGIN_WIN) {
 	count = 4;
 	global.ASSAULT_MAX = 10;
@@ -30,7 +27,7 @@ repeat (count) {
 		}
 			
 		attempts += 1;
-		if (attempts > 100) {
+		if (attempts > 1000) {
 			break;	
 		}
 	}

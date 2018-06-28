@@ -159,6 +159,7 @@ if (state == STATE.IDLE) {
 			if (taskProgress > taskTime) {
 				energy = totalEnergy;
 				myHealth = maxHealth;
+				flee = false;
 				task = TASK.IDLE;
 				state = STATE.IDLE;	
 			} else { taskProgress += max(1, chargeSpeed * ds_list_size(global.ROOMS[ROOM.CHARGING])) * multiplier; }
@@ -218,7 +219,7 @@ if (state == STATE.IDLE) {
 		var node = ds_stack_top(path);
 		var tx = node[0];
 		var ty = node[1];
-		var currentSpeed = (energy <= 0) ? crawlSpeed : moveSpeed * multiplier;
+		var currentSpeed = moveSpeed * multiplier;
 		tx = WorldX(tx, ty);
 		ty = WorldY(tx, ty);
 	

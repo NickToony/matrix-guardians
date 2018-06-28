@@ -4,8 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-damage = 3;
-myHealth = 400;
+damage = 4;
+myHealth = 500;
 maxHealth = myHealth;
 moveSpeed = 3;
 image_blend = c_red;

@@ -13,10 +13,10 @@ var currentY = gridY;
 
 var closest = instance_nearest(x, y, targetObject);
 if (damage > 0 && ((targetObject != noone && state != STATE.ATTACK) || (state == STATE.ATTACK && targetObject != closest))) {
-	if (closest && point_distance(x, y, closest.x, closest.y) < 600) {
+	if (closest && point_distance(x, y, closest.x, closest.y) < 800) {
 		var temp = APathFind(currentX, currentY, UnworldX(closest.x, closest.y), UnworldY(closest.x, closest.y), false);
 		if (temp != noone) {
-			if (ds_stack_size(temp) < 15) {
+			if (ds_stack_size(temp) < 20) {
 				if (path != noone) {
 					APathDestroy(path);	
 				}
@@ -30,7 +30,7 @@ if (damage > 0 && ((targetObject != noone && state != STATE.ATTACK) || (state ==
 		}
 	} else if (state == STATE.IDLE && instance_exists(objBuildingEnemySpawn) && targetObject == objEnemy) {
 		closest = instance_nearest(x, y, objBuildingEnemySpawn);
-		if (closest && point_distance(x, y, closest.x, closest.y) < 1000) {
+		if (closest && point_distance(x, y, closest.x, closest.y) < 3000) {
 		var temp = APathFind(currentX, currentY, closest.gridX, closest.gridY, false);
 			if (temp != noone) {
 				if (path != noone) {
@@ -45,17 +45,23 @@ if (damage > 0 && ((targetObject != noone && state != STATE.ATTACK) || (state ==
 	}
 }
 
-if (damage == 0 && myHealth < maxHealth) {
+if (damage == 0 && !flee && closest && point_distance(x, y, closest.x, closest.y) < 500) {
 	ClearTasks();
 	STATE = STATE.IDLE;
 	TASK = TASK.IDLE;
 	if (path != noone) {
 		APathDestroy(path);
 		path = noone;
-	}	
+	}
+	flee = true;
 }
 
 if (state == STATE.IDLE && task == TASK.IDLE) {
+	
+	gridX = UnworldX(x, y);
+	gridY = UnworldY(x, y);
+	currentX = gridX;
+	currentY = gridY;
 	
 	event_user(0);
 	
@@ -81,6 +87,8 @@ if (state == STATE.IDLE && task == TASK.IDLE) {
 			if (path != noone) {
 				state = STATE.MOVING;
 			}
+		} else {
+			alarm[0] = room_speed * 5;	
 		}
 	}
 }

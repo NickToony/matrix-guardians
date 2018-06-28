@@ -3,7 +3,7 @@ if (energy <= 0) {
 	TutorialTrigger("WARNING! WARNING! A ROBOT IS NOT FUNCTIONING AT PEAK EFFICIENCY! PLACE A CHARGING ROOM NEARBY!", TUTORIAL.LOW_CHARGE);	
 }
 	
-if ((energy <= 10 || myHealth < maxHealth) && !ds_list_empty(global.ROOMS[ROOM.CHARGING])) {
+if ((energy <= 10 || flee) && !ds_list_empty(global.ROOMS[ROOM.CHARGING])) {
 	var priority = ds_priority_create();
 		
 	for (var i = 0;	i < ds_list_size(global.ROOMS[ROOM.CHARGING]); i ++) {
@@ -32,7 +32,7 @@ if ((energy <= 10 || myHealth < maxHealth) && !ds_list_empty(global.ROOMS[ROOM.C
 			taskTime = chargeTime;
 			done = true;
 		} else {
-			tile.accessible = false;	
+			//tile.accessible = false;	
 		}
 	}
 	ds_priority_destroy(priority);
