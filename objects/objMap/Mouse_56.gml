@@ -103,7 +103,6 @@ if (selecting) {
 			case TOOL.SPAWN:
 				var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
 				if (tile != noone && !tile.solid && tile.connected) {
-					SpendMetals(toolCost);	
 					CreateUnit(tile.gridX, tile.gridY, objRoomba);
 				}
 			break;
@@ -115,7 +114,6 @@ if (selecting) {
 					valid = true;
 				}
 				instance.overclocked += room_speed * 15;
-				
 			break;
 			
 			case TOOL.GENERATOR:
@@ -153,5 +151,7 @@ if (selecting) {
 		if (tool != TOOL.NONE) {
 			PlayUISound(sndFailed);
 		}
+	} else {
+		SpendMetals(toolCost);	
 	}
 }

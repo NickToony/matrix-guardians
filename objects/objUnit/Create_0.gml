@@ -4,7 +4,8 @@ event_inherited();
 enum STATE {
 	IDLE,
 	MOVING,
-	TASK
+	TASK,
+	ASSAULT
 }
 
 enum TASK {

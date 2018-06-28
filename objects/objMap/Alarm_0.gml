@@ -1,3 +1,3 @@
-alarm[0] = WAVE_MAX_TIME;
+alarm[0] = global.WAVE_TIME;
 
 TriggerEnemyWave();

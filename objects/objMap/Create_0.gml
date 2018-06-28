@@ -6,8 +6,6 @@
 #macro SELECTION_RATE 5
 #macro SELECTION_RANGE 16
 
-#macro WAVE_MAX_TIME room_speed * 240
-
 enum TOOL {
 	NONE,
 	DIG,
@@ -27,6 +25,7 @@ tool = TOOL.NONE;
 toolCost = 0;
 
 InitRooms();
+InitDifficulty();
 
 mapWidth = 32;
 mapHeight = mapWidth*2;
@@ -96,4 +95,4 @@ CreateMetals(xx, yy, 300);
 
 MoveCamera(WorldX(mapWidth/2, mapHeight/2), WorldY(mapWidth/2, mapHeight/2), true);
 
-alarm[0] = WAVE_MAX_TIME;
+alarm[0] = global.WAVE_TIME;
