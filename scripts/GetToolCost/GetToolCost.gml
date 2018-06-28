@@ -31,6 +31,10 @@ switch (tool) {
 	case TOOL.GENERATOR:
 		cost = 500;
 		break;
+		
+	case TOOL.TRAP:
+		cost = 100;
+		break;
 	
 	default:
 		cost = 0;
