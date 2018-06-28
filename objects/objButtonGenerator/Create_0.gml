@@ -6,5 +6,5 @@ event_inherited();
 
 tool = TOOL.GENERATOR;
 text = "GENERATOR";
-icon = sprBuild;
+icon = sprIconGenerator;
 tooltip = "An advanced machine that will extract metals from lava pits. Can only be placed on lava, and will produce metals indefinitely.";
