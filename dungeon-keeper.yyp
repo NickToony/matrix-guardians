@@ -2661,6 +2661,25 @@
             }
         },
         {
+            "Key": "b9756a80-2060-4fa8-aedb-87a50275e4fa",
+            "Value": {
+                "id": "b1c4662f-8d4f-412e-b83d-fedd4f649f2a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/sprTrap\/sprTrap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb84ad58-ded3-4cb5-9ec1-c6aa8c678dea",
             "Value": {
                 "id": "ae743c6a-543f-4d5b-8489-d57cd4210b4d",

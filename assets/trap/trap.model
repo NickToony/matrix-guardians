@@ -1,0 +1,24 @@
+# Made using Asset Forge (1.3)
+
+:models
+City/roof_square[(0, 0, -0.1);(0.0, 180.0, 0.0);(1.0, 0.5, 1.0);roof_square_116;customMaterial5+customMaterial5]
+Primitives/cylinder_donut[(0, 0, -0.1);(0.0, 180.0, 0.0);(0.6, 0.3, 0.6);cylinder_donut_117;_defaultMat]
+Primitives/cylinder_donut[(0, 0, -0.1);(0.0, 180.0, 0.0);(0.1, 0.2, 0.1);cylinder_donut_121;_defaultMat]
+Primitives/cylinder_donut[(0, 0, -0.1);(0.0, 180.0, 0.0);(0.2, 0.2, 0.2);cylinder_donut_122;_defaultMat]
+Primitives/sphere_full[(0, 1, -0.1);(0.0, 180.0, 0.0);(0.1, 0.1, 0.1);sphere_full_123;lightStone]
+Primitives/cylinder_cone[(0, 1.4, -0.1);(0.0, 0.0, 180.0);(0.2, 0.4, 0.2);cylinder_cone_124;customMaterial4]
+Primitives/cylinder_donut[(0, 1.2, -0.1);(0.0, 180.0, 0.0);(0.2, 0.1, 0.2);cylinder_donut_125;lightStone]
+Primitives/cylinder_donut[(0, 1.3, -0.1);(0.0, 180.0, 0.0);(0.4, 0.1, 0.4);cylinder_donut_127;lightStone]
+Primitives/block_rounded[(0, 1.4, -0.1);(0.0, 180.0, 0.0);(0.3, 0.2, 0.3);block_rounded_128;customMaterial4]
+
+:materials
+stone[RGBA(0.333, 0.333, 0.333, 1.000);]
+lightStone[RGBA(0.430, 1.000, 0.314, 1.000);metalGalvan]
+_defaultMat[RGBA(0.857, 0.264, 0.264, 1.000);metalGalvan]
+customMaterial3[RGBA(0.224, 0.528, 0.236, 1.000);]
+customMaterial4[RGBA(0.267, 0.267, 0.267, 1.000);metalGalvan]
+customMaterial5[RGBA(0.116, 0.116, 0.116, 1.000);metalPlate]
+
+:textures
+
+:extra
