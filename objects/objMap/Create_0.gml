@@ -50,9 +50,6 @@ floorTasks = ds_list_create();
 wallTasks = ds_list_create();
 buildTasks = ds_list_create();
 
-// Create pathfinding grid
-pathfinding = mp_grid_create(0, 0, mapWidth, mapHeight, 1, 1);
-
 for (var xx = 0; xx < mapWidth; xx ++) {
 	for (var yy = 0; yy < mapHeight; yy ++) {
 		SetTile(xx, yy, objDirtBlock);
@@ -83,7 +80,7 @@ repeat (5) {
 	CreateUnitGateway(objRoomba);
 }
 
-CreateUnitGateway(objDrone);
+//CreateUnitGateway(objDrone);
 CreateUnitGateway(objKillBot);
 	
 xx = GetNeighbourX(mx, my, BOTTOM_LEFT);

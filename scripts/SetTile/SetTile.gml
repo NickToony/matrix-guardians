@@ -47,12 +47,6 @@ if (argument2 != noone) {
 			
 	// Attach to the tile grid
 	ds_grid_set(objMap.grid, argument0, argument1, instance);
-	// Attach to the pathfinding grid
-	if (instance.solid) {
-		mp_grid_add_cell(objMap.pathfinding, xx, yy);
-	} else {
-		mp_grid_clear_cell(objMap.pathfinding, xx, yy);
-	}
 	
 	// Recalc neighbours
 	//RecalcNeighbours(instance); 
@@ -70,8 +64,6 @@ if (argument2 != noone) {
 } else { 
 	// Attach to the tile grid
 	ds_grid_set(objMap.grid, argument0, argument1, noone);
-	// Set pathfinding solid
-	mp_grid_add_cell(objMap.pathfinding, xx, yy);
 	
 	//RecalcNeighbours(GetTileDirection(xx, yy, TOP_LEFT));
 	//RecalcNeighbours(GetTileDirection(xx, yy, TOP_RIGHT));
