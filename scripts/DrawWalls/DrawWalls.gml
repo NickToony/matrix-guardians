@@ -30,7 +30,7 @@ for (var dir = 0; dir < array_length_1d(currentTile.walled); dir++) {
 
 	if (tile != noone && tile.solid) continue;
 	
-	if (tile.roomType != ROOM.NONE) {
+	if (tile != noone && tile.roomType != ROOM.NONE) {
 		wall = GetWallForRoom(tile.roomType);	
 	}
 

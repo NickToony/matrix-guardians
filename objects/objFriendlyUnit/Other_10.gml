@@ -13,7 +13,8 @@ if (energy <= 10 && !ds_list_empty(global.ROOMS[ROOM.CHARGING])) {
 		if (tile == noone || tile.roomType != ROOM.CHARGING) {
 			ds_list_delete(global.ROOMS[ROOM.CHARGING], i);
 		} else if (tile.accessible) {
-			ds_priority_add(priority, i, point_distance(gridX, gridY, tile.gridX, tile.gridY) + irandom(5));
+			//ds_priority_add(priority, i, point_distance(gridX, gridY, tile.gridX, tile.gridY) + irandom(5));
+			ds_priority_add(priority, i, irandom(5));
 		}
 	}
 		

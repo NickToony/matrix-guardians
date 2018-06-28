@@ -29,14 +29,22 @@ if (damage > 0 && targetObject != noone && state != STATE.ATTACK) {
 			}
 		}
 	} else if (state == STATE.IDLE && instance_exists(objBuildingEnemySpawn) && irandom(10) <= 1) {
-		var temp = APathFind(currentX, currentY, UnworldX(objBuildingEnemySpawn.x, objBuildingEnemySpawn.y), UnworldY(objBuildingEnemySpawn.x, objBuildingEnemySpawn.y), false);
-		if (temp != noone) {
-			if (path != noone) {
-				APathDestroy(path);	
+		var closest = instance_nearest(x, y, objBuildingEnemySpawn);
+		if (closest && point_distance(x, y, closest.x, closest.y) < 600) {
+		var temp = APathFind(currentX, currentY, closest.gridX, closest.gridY, false);
+			if (temp != noone) {
+				if (ds_stack_size(temp) > 2) {
+					if (path != noone) {
+						APathDestroy(path);	
+					}
+					state = STATE.MOVING;
+					ClearTasks();
+					path = temp;
+				} else {
+					APathDestroy(temp);
+					with (closest) { instance_destroy(); };
+				}
 			}
-			state = STATE.MOVING;
-			ClearTasks();
-			path = temp;
 		}
 	}
 }

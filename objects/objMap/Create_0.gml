@@ -67,6 +67,7 @@ while (instance_number(objMetalBlock) < mapHeight*3) {
 SetTileRegion(mapWidth/2, mapHeight/2, objBlockTile, 4, 4);
 SetTileRegion(mapWidth/2, mapHeight/2, objDirtFloor, 3, 3);
 SetTileRegion(mapWidth/2, mapHeight/2, objFloorTile, 2, 2);
+SetRoomRegion(mapWidth/2, mapHeight/2, ROOM.STORAGE, 2, 2);
 
 // Base
 var xx = GetNeighbourX(mapWidth/2, mapHeight/2, BOTTOM_RIGHT);

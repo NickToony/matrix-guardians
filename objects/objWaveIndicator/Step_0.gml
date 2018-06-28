@@ -1,0 +1,1 @@
+text = string(ceil(objMap.alarm[0] / room_speed)) + " seconds";

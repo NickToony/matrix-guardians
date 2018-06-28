@@ -2,10 +2,10 @@ x = round(x + (xTo - x) / 4);
 y = round(y + (yTo - y) / 4);
 zoom = zoom + (zoomTo - zoom) / 2;
 
-var left = keyboard_check(ord("A"));
-var right = keyboard_check(ord("D"));
-var up = keyboard_check(ord("W"));
-var down = keyboard_check(ord("S"));
+var left = keyboard_check(ord("A")) || device_mouse_x_to_gui(0) < 16;
+var right = keyboard_check(ord("D")) || device_mouse_x_to_gui(0) > view_wview[0] - 16;
+var up = keyboard_check(ord("W")) || device_mouse_y_to_gui(0) < 16;
+var down = keyboard_check(ord("S")) || device_mouse_y_to_gui(0) > view_hview[0] - 16;
 var zoomIn = keyboard_check(ord("E")) || mouse_wheel_up();
 var zoomOut = keyboard_check(ord("Q")) || mouse_wheel_down();
 

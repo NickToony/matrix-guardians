@@ -200,6 +200,7 @@ if (state == STATE.IDLE) {
 			path = APathFind(gridX, gridY, UnworldX(target.x, target.y), UnworldY(target.x, target.y), false);
 			if (path == noone) {
 				state = STATE.IDLE;	
+				return;
 			}
 		}
 		

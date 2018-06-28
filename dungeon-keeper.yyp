@@ -96,6 +96,25 @@
             }
         },
         {
+            "Key": "037c1371-adff-470d-a538-ac02c44c2055",
+            "Value": {
+                "id": "1f5ec59f-f000-46e7-8625-4131ad15fe3c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/SetRoomRegion\/SetRoomRegion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0499a60c-bcfa-4763-abd0-310dbb1aba30",
             "Value": {
                 "id": "3f2e640d-6979-4e06-aa83-fb0d63f599c4",
@@ -1122,6 +1141,25 @@
             }
         },
         {
+            "Key": "464dfec9-7ddc-4c15-995c-c9149380fb95",
+            "Value": {
+                "id": "c27491c0-fb75-492a-a158-bf072d5053a8",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objRoombaCounter\/objRoombaCounter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4853cfd3-8466-421f-8a01-856af01f4669",
             "Value": {
                 "id": "5b5d8d21-7a3b-4834-80ad-f529cbc9fed9",
@@ -1479,6 +1517,25 @@
                     "default"
                 ],
                 "resourcePath": "objects\/objFloorTile\/objFloorTile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6761f074-ac5a-415f-9f72-d5ec307daee0",
+            "Value": {
+                "id": "64123982-62b2-4713-bb20-6d2fca25aa16",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/objWaveIndicator\/objWaveIndicator.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3673,6 +3730,7 @@
         "e2090338-b221-460f-b7ef-67d5611b0a5f",
         "8b54c642-4db7-48a8-868b-e15c3f17c4a1",
         "3515e79e-7a5b-426c-a54a-d466726d8502",
+        "037c1371-adff-470d-a538-ac02c44c2055",
         "d2549a4f-5b02-4616-a8a6-f1e98561ce84",
         "809104ba-5d5b-432f-93ed-2bb21ac75170",
         "888ff6a0-0f33-44ef-8f20-bd3ef615bc78",
