@@ -22,8 +22,10 @@ if (oldTask != TASK.IDLE) {
 				break;
 			
 			case TASK.PICKUP:
+			if (instance_exists(taskObj)) {
 				taskObj.bot = noone;
-				break;
+			}
+			break;
 		}
 	}
 	

@@ -17,7 +17,7 @@ if (pickedup) {
 	y = mouse_y;
 	depth = 999999;
 	
-	if (mouse_check_button(mb_right)) {
+	if (mouse_check_button_pressed(mb_right)) {
 		var tile = GetTile(objCamera.mouseTileX, objCamera.mouseTileY);
 		if (tile != noone && !tile.solid && tile.connected) {
 			x = WorldX(tile.gridX, tile.gridY);
@@ -204,8 +204,12 @@ if (state == STATE.IDLE) {
 		return;
 	}
 	
-	if (point_distance(x, y, target.x, target.y) < objMap.tileWidth) {
-		target.myHealth -= damage;
+	if (point_distance(x, y, target.x, target.y) < objMap.tileWidth*2) {
+		if (target.object_index == objBuildingEnemySpawn) {
+			target.myHealth -= damage*5;	
+		} else {
+			target.myHealth -= damage*2;	
+		}
 	} else {
 		if (path == noone) {
 			path = APathFind(gridX, gridY, UnworldX(target.x, target.y), UnworldY(target.x, target.y), false);

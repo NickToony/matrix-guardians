@@ -31,10 +31,11 @@ if (selecting) {
 			draw = true;
 			break;
 		case TOOL.OVERCLOCK:
-			var instance = instance_nearest(mouse_x, mouse_y, objUnit);
+			var instance = instance_nearest(mouse_x, mouse_y, objFriendlyUnit);
 			valid = false;
-			if (instance && point_distance(mouse_x, mouse_y, objUnit.x, objUnit.y) < 128) {
+			if (instance && point_distance(mouse_x, mouse_y, instance.x, instance.y) < 128) {
 				valid = true;
+				
 			}
 			draw = true;
 			break;

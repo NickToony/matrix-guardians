@@ -22,6 +22,8 @@ if (!clicked && !ds_list_empty(items)) {
 		}
 	}
 	ds_list_clear(items);
+	// Still clicked for now.
+	global.mouse_over_ui = true;
 }
 
 if (clicked && ds_list_empty(items)) {

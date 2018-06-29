@@ -1,6 +1,8 @@
 alarm[0] = frequency;
 if (!global.BEGIN_WIN) {
 	alarm[0] += (room_speed * instance_number(objEnemy)/10);
+} else {
+	alarm[0] += (room_speed * instance_number(objEnemy)/4);
 }
 
 if (instance_number(objEnemy) < min(difficulty, global.MAX_ENEMIES)) {

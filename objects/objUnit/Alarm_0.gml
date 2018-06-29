@@ -12,8 +12,12 @@ var currentX = gridX;
 var currentY = gridY;
 
 var closest = instance_nearest(x, y, targetObject);
-if (damage > 0 && ((targetObject != noone && state != STATE.ATTACK) || (state == STATE.ATTACK && targetObject != closest))) {
-	if (closest && point_distance(x, y, closest.x, closest.y) < 800) {
+var closestBuilding =  instance_nearest(x, y, objBuildingEnemySpawn);;
+if (closest == noone && targetObject == objEnemy) {
+	closest = closestBuilding;
+}
+if (damage > 0 && ((closest != noone && state != STATE.ATTACK) || (state == STATE.ATTACK && target != closest))) {
+	if (closest && closest.object_index != objBuildingEnemySpawn && point_distance(x, y, closest.x, closest.y) < 800) {
 		var temp = APathFind(currentX, currentY, UnworldX(closest.x, closest.y), UnworldY(closest.x, closest.y), false);
 		if (temp != noone) {
 			if (ds_stack_size(temp) < 20) {
@@ -31,7 +35,7 @@ if (damage > 0 && ((targetObject != noone && state != STATE.ATTACK) || (state ==
 	} else if (state == STATE.IDLE && instance_exists(objBuildingEnemySpawn) && targetObject == objEnemy) {
 		closest = instance_nearest(x, y, objBuildingEnemySpawn);
 		if (closest && point_distance(x, y, closest.x, closest.y) < 3000) {
-		var temp = APathFind(currentX, currentY, closest.gridX, closest.gridY, false);
+			var temp = APathFind(currentX, currentY, closest.gridX, closest.gridY, false);
 			if (temp != noone) {
 				if (path != noone) {
 					APathDestroy(path);	
